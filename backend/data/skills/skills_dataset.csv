@@ -1,0 +1,1525 @@
+name,category
+2D Skeletal Animation (Spine 2D),"3D Modeling, Animation & Game Development"
+3D Architectural Visualization,"3D Modeling, Animation & Game Development"
+3D Character Modeling,"3D Modeling, Animation & Game Development"
+AR Game Development (ARKit / ARCore),"3D Modeling, Animation & Game Development"
+Adobe After Effects Motion Graphics,"3D Modeling, Animation & Game Development"
+Adobe Substance 3D Painter Texturing,"3D Modeling, Animation & Game Development"
+Autodesk 3ds Max Architectural Modeling,"3D Modeling, Animation & Game Development"
+Autodesk Maya 3D Animation,"3D Modeling, Animation & Game Development"
+Blender 3D Modeling Fundamentals,"3D Modeling, Animation & Game Development"
+Blender Digital Sculpting,"3D Modeling, Animation & Game Development"
+Blender Keyframe 3D Animation,"3D Modeling, Animation & Game Development"
+Blender Lighting & Cycles/Eevee Rendering,"3D Modeling, Animation & Game Development"
+Blender Procedural Shading & Nodes,"3D Modeling, Animation & Game Development"
+Blender Rigging & Weight Painting,"3D Modeling, Animation & Game Development"
+Blender UV Unwrapping & Retopology,"3D Modeling, Animation & Game Development"
+Environment Art & Terrains,"3D Modeling, Animation & Game Development"
+Game Audio & Sound FX (FMOD / Wwise),"3D Modeling, Animation & Game Development"
+Game Level Design & Whiteboxing,"3D Modeling, Animation & Game Development"
+Game Mechanics Prototyping,"3D Modeling, Animation & Game Development"
+Game Optimization & Frame Profiling,"3D Modeling, Animation & Game Development"
+Godot 4 Game Engine,"3D Modeling, Animation & Game Development"
+Godot GDScript Programming,"3D Modeling, Animation & Game Development"
+Hard-Surface 3D Modeling,"3D Modeling, Animation & Game Development"
+Maxon Cinema 4D Motion Graphics,"3D Modeling, Animation & Game Development"
+Motion Capture (MoCap) Data Cleanup,"3D Modeling, Animation & Game Development"
+Rigging Bipedal & Quadruped Characters,"3D Modeling, Animation & Game Development"
+Shader Programming (HLSL / GLSL / Shader Graph),"3D Modeling, Animation & Game Development"
+Unity 2D Game Mechanics,"3D Modeling, Animation & Game Development"
+Unity 3D Physics & Raycasting,"3D Modeling, Animation & Game Development"
+Unity C# Gameplay Scripting,"3D Modeling, Animation & Game Development"
+Unity Game Engine Fundamentals,"3D Modeling, Animation & Game Development"
+Unity Particle Systems,"3D Modeling, Animation & Game Development"
+Unity UI Toolkit,"3D Modeling, Animation & Game Development"
+Unreal Engine 5 Fundamentals,"3D Modeling, Animation & Game Development"
+Unreal Engine Blueprints Scripting,"3D Modeling, Animation & Game Development"
+Unreal Engine C++ Game Development,"3D Modeling, Animation & Game Development"
+Unreal Engine Nanite & Lumen,"3D Modeling, Animation & Game Development"
+VR Game Development (Meta Quest / OpenXR),"3D Modeling, Animation & Game Development"
+Visual Effects (VFX) Compositing,"3D Modeling, Animation & Game Development"
+ZBrush High-Detail Sculpting,"3D Modeling, Animation & Game Development"
+Autonomous AI Agents (CrewAI / AutoGPT),"AI, Machine Learning & LLMs"
+CatBoost,"AI, Machine Learning & LLMs"
+Computer Vision,"AI, Machine Learning & LLMs"
+DVC (Data Version Control),"AI, Machine Learning & LLMs"
+Deep Q-Learning,"AI, Machine Learning & LLMs"
+DeepSpeed,"AI, Machine Learning & LLMs"
+Explainable AI (SHAP / LIME),"AI, Machine Learning & LLMs"
+Feature Engineering,"AI, Machine Learning & LLMs"
+Generative AI Engineering,"AI, Machine Learning & LLMs"
+Graph Neural Networks (GNN),"AI, Machine Learning & LLMs"
+Hugging Face Diffusers,"AI, Machine Learning & LLMs"
+Hugging Face Transformers,"AI, Machine Learning & LLMs"
+Image Segmentation (Mask R-CNN / SAM),"AI, Machine Learning & LLMs"
+Keras,"AI, Machine Learning & LLMs"
+Kubeflow Pipelines,"AI, Machine Learning & LLMs"
+LLM Fine-Tuning (LoRA / QLoRA),"AI, Machine Learning & LLMs"
+LangChain,"AI, Machine Learning & LLMs"
+LangSmith Observability,"AI, Machine Learning & LLMs"
+Large Language Models (LLMs),"AI, Machine Learning & LLMs"
+LightGBM,"AI, Machine Learning & LLMs"
+LlamaIndex,"AI, Machine Learning & LLMs"
+MLOps Infrastructure,"AI, Machine Learning & LLMs"
+MLflow,"AI, Machine Learning & LLMs"
+Midjourney Prompting,"AI, Machine Learning & LLMs"
+Model Evaluation Metrics,"AI, Machine Learning & LLMs"
+Model Quantization (GGUF / AWQ),"AI, Machine Learning & LLMs"
+NVIDIA TensorRT,"AI, Machine Learning & LLMs"
+Named Entity Recognition (NER),"AI, Machine Learning & LLMs"
+Natural Language Processing (NLP),"AI, Machine Learning & LLMs"
+ONNX Runtime,"AI, Machine Learning & LLMs"
+Ollama Local Deployment,"AI, Machine Learning & LLMs"
+OpenCV,"AI, Machine Learning & LLMs"
+Prompt Engineering,"AI, Machine Learning & LLMs"
+PyTorch Deep Learning,"AI, Machine Learning & LLMs"
+Reinforcement Learning (RLHF),"AI, Machine Learning & LLMs"
+Retrieval-Augmented Generation (RAG),"AI, Machine Learning & LLMs"
+Scikit-Learn,"AI, Machine Learning & LLMs"
+Semantic Search,"AI, Machine Learning & LLMs"
+Sentiment Analysis,"AI, Machine Learning & LLMs"
+Speech-to-Text (OpenAI Whisper),"AI, Machine Learning & LLMs"
+Stable Diffusion,"AI, Machine Learning & LLMs"
+TensorFlow 2.0,"AI, Machine Learning & LLMs"
+Text-to-Speech (TTS),"AI, Machine Learning & LLMs"
+Time Series Forecasting (Prophet / ARIMA),"AI, Machine Learning & LLMs"
+Triton Inference Server,"AI, Machine Learning & LLMs"
+Vector Databases (Pinecone / Chroma / Milvus / Qdrant),"AI, Machine Learning & LLMs"
+Weights & Biases,"AI, Machine Learning & LLMs"
+XGBoost,"AI, Machine Learning & LLMs"
+YOLO Object Detection,"AI, Machine Learning & LLMs"
+vLLM High-Throughput Serving,"AI, Machine Learning & LLMs"
+ACT Comprehensive Test Prep,"Academic Tutoring, Mathematics & Sciences"
+AP Calculus AB / BC Prep,"Academic Tutoring, Mathematics & Sciences"
+AP Computer Science Principles Prep,"Academic Tutoring, Mathematics & Sciences"
+AP Physics C (Mechanics & Electricity),"Academic Tutoring, Mathematics & Sciences"
+Academic Study Habits & Spaced Repetition,"Academic Tutoring, Mathematics & Sciences"
+Astronomy & Planetary Science,"Academic Tutoring, Mathematics & Sciences"
+"Biochemistry (Enzyme Kinetics, Metabolic Pathways)","Academic Tutoring, Mathematics & Sciences"
+College Admission Essay Coaching,"Academic Tutoring, Mathematics & Sciences"
+Differential Equations & Laplace Transforms,"Academic Tutoring, Mathematics & Sciences"
+"Discrete Mathematics (Set Theory, Combinatorics, Graph Theory)","Academic Tutoring, Mathematics & Sciences"
+"Earth Science, Plate Tectonics & Meteorology","Academic Tutoring, Mathematics & Sciences"
+Elementary & Middle School Mathematics,"Academic Tutoring, Mathematics & Sciences"
+Environmental Science & Sustainability,"Academic Tutoring, Mathematics & Sciences"
+GMAT Focus Edition Math Prep,"Academic Tutoring, Mathematics & Sciences"
+GRE Quantitative Section Strategies,"Academic Tutoring, Mathematics & Sciences"
+GRE Verbal Reasoning & Analytical Writing,"Academic Tutoring, Mathematics & Sciences"
+General Biology & Cellular Respiration,"Academic Tutoring, Mathematics & Sciences"
+General Chemistry & Chemical Bonding,"Academic Tutoring, Mathematics & Sciences"
+"Genetics & Molecular Biology (CRISPR, DNA)","Academic Tutoring, Mathematics & Sciences"
+Geometry & Geometric Proofs,"Academic Tutoring, Mathematics & Sciences"
+High School Algebra I & II,"Academic Tutoring, Mathematics & Sciences"
+High School Physics (Newtonian Mechanics),"Academic Tutoring, Mathematics & Sciences"
+History Tutoring (World History & US History),"Academic Tutoring, Mathematics & Sciences"
+Human Anatomy & Physiology Systems,"Academic Tutoring, Mathematics & Sciences"
+LSAT Logic Games & Logical Reasoning Prep,"Academic Tutoring, Mathematics & Sciences"
+"Linear Algebra (Matrices, Eigenvalues, Vector Spaces)","Academic Tutoring, Mathematics & Sciences"
+MCAT Biological and Biochemical Foundations,"Academic Tutoring, Mathematics & Sciences"
+"Macroeconomics Principles (GDP, Inflation, Monetary Policy)","Academic Tutoring, Mathematics & Sciences"
+"Microeconomics Principles (Supply & Demand, Elasticity)","Academic Tutoring, Mathematics & Sciences"
+Multivariable Calculus & Vector Fields,"Academic Tutoring, Mathematics & Sciences"
+Organic Chemistry Reactions & Mechanisms,"Academic Tutoring, Mathematics & Sciences"
+Philosophy Tutoring (Logic & Ethics),"Academic Tutoring, Mathematics & Sciences"
+Physical Chemistry (Kinetics & Equilibrium),"Academic Tutoring, Mathematics & Sciences"
+Pre-Calculus & Trigonometry,"Academic Tutoring, Mathematics & Sciences"
+Probability & Mathematical Statistics,"Academic Tutoring, Mathematics & Sciences"
+Quantum Mechanics Fundamentals,"Academic Tutoring, Mathematics & Sciences"
+SAT Math Prep Strategies,"Academic Tutoring, Mathematics & Sciences"
+SAT Reading & Writing Exam Prep,"Academic Tutoring, Mathematics & Sciences"
+Scientific Research Paper Writing (IEEE / APA),"Academic Tutoring, Mathematics & Sciences"
+Thermodynamics & Heat Transfer,"Academic Tutoring, Mathematics & Sciences"
+Academic Book Review Writing,"Academic Writing, Research & Publishing"
+Academic Journal Selection & Impact Factor Analysis,"Academic Writing, Research & Publishing"
+Academic Peer Review Writing & Response Letters,"Academic Writing, Research & Publishing"
+BibTeX & Reference Management (Zotero / Mendeley),"Academic Writing, Research & Publishing"
+Conference Poster Design & Presentation,"Academic Writing, Research & Publishing"
+Dissertation Outlining & Chapter Drafting,"Academic Writing, Research & Publishing"
+Ethnographic Fieldwork & Participant Observation,"Academic Writing, Research & Publishing"
+Focus Group Moderation & Transcript Analysis,"Academic Writing, Research & Publishing"
+Grant Proposal Budgeting (NSF / NIH Format),"Academic Writing, Research & Publishing"
+Historical Archival Research & Primary Sources,"Academic Writing, Research & Publishing"
+Institutional Review Board (IRB) Ethics Approval,"Academic Writing, Research & Publishing"
+Interdisciplinary Research Methodologies,"Academic Writing, Research & Publishing"
+LaTeX Document Typesetting (Overleaf),"Academic Writing, Research & Publishing"
+Literature Review Synthesis & Matrix Design,"Academic Writing, Research & Publishing"
+Meta-Analysis Statistical Synthesis (R metafor),"Academic Writing, Research & Publishing"
+Open Access Publishing & Creative Commons Licenses,"Academic Writing, Research & Publishing"
+Oral Thesis Defense Presentation & Q&A,"Academic Writing, Research & Publishing"
+Qualitative Research Coding (NVivo / ATLAS.ti),"Academic Writing, Research & Publishing"
+Quantitative Survey Design & Likert Scales,"Academic Writing, Research & Publishing"
+Systematic Review & PRISMA Guidelines,"Academic Writing, Research & Publishing"
+"Accents & Dialects (British RP, Southern US, Irish, Scottish)","Audio, Voiceover & Podcasting"
+Acoustic Panel Placement & Reflection Control,"Audio, Voiceover & Podcasting"
+Audio Restoration & De-Clicking (iZotope RX),"Audio, Voiceover & Podcasting"
+Audiobook Narration & Long-Form Reading,"Audio, Voiceover & Podcasting"
+Character Voice Acting for Video Games,"Audio, Voiceover & Podcasting"
+Commercial Voiceover Delivery & Timing,"Audio, Voiceover & Podcasting"
+Home Recording Studio Soundproofing,"Audio, Voiceover & Podcasting"
+Intro / Outro Jingle Production & Stems,"Audio, Voiceover & Podcasting"
+Live Audio Streaming on Twitch & YouTube,"Audio, Voiceover & Podcasting"
+Loudness Compliance for Podcasts (-16 LUFS),"Audio, Voiceover & Podcasting"
+Microphone Technique & Proximity Effect,"Audio, Voiceover & Podcasting"
+Multitrack Podcast Editing in Reaper,"Audio, Voiceover & Podcasting"
+Podcast Concept & Episode Structuring,"Audio, Voiceover & Podcasting"
+Podcast Hosting & Distribution (RSS / Transistor / Spotify),"Audio, Voiceover & Podcasting"
+Podcast Interviewing Techniques,"Audio, Voiceover & Podcasting"
+Podcast Monetization & Dynamic Ad Insertion,"Audio, Voiceover & Podcasting"
+Professional Voiceover Warmups,"Audio, Voiceover & Podcasting"
+Remote Interview Recording (Riverside.fm / SquadCast),"Audio, Voiceover & Podcasting"
+Sibilance Reduction & De-Essing,"Audio, Voiceover & Podcasting"
+Voice Compression & Dynamic Range Control,"Audio, Voiceover & Podcasting"
+Automatic Transmission Fluid & Filter Service,Automotive & Motor Engineering
+Automotive HVAC R134a/R1234yf Recharge,Automotive & Motor Engineering
+Automotive Vinyl Wrap Installation,Automotive & Motor Engineering
+Brake Line Flaring & Master Cylinder Replacement,Automotive & Motor Engineering
+Car Interior Detailing & Leather Conditioning,Automotive & Motor Engineering
+Ceramic Coating Application on Auto Paint,Automotive & Motor Engineering
+Differential Fluid Change & Ring/Pinion Setup,Automotive & Motor Engineering
+Dyno Testing & Power Curve Analysis,Automotive & Motor Engineering
+ECU Tuning & Fuel Map Remapping,Automotive & Motor Engineering
+Engine Timing Belt & Water Pump Replacement,Automotive & Motor Engineering
+Exhaust System Welding & Cat Replacement,Automotive & Motor Engineering
+Fuel Injector Cleaning & Flow Testing,Automotive & Motor Engineering
+Manual Transmission Clutch Replacement,Automotive & Motor Engineering
+Paint Correction & Rotary Buffer Polishing,Automotive & Motor Engineering
+Paintless Dent Repair (PDR) Techniques,Automotive & Motor Engineering
+Suspension Struts & Control Arm Bushings,Automotive & Motor Engineering
+Trailer Towing & Brake Controller Wiring,Automotive & Motor Engineering
+Turbocharger & Intercooler Installation,Automotive & Motor Engineering
+Wheel Alignment & Camber/Toe Geometry,Automotive & Motor Engineering
+Window Tinting Application,Automotive & Motor Engineering
+Aircraft Radio Communications (ATC Phraseology),"Aviation, Marine & Navigation"
+Aircraft Weight & Balance Calculations,"Aviation, Marine & Navigation"
+Anchoring Techniques in High Winds,"Aviation, Marine & Navigation"
+Aviation Meteorology & METAR/TAF Decoding,"Aviation, Marine & Navigation"
+Basic Seamanship & Boating Safety,"Aviation, Marine & Navigation"
+Buoyancy Control in Scuba Diving,"Aviation, Marine & Navigation"
+Coastal Navigation & Nautical Charts,"Aviation, Marine & Navigation"
+Dive Table & Decompression Planning,"Aviation, Marine & Navigation"
+IFR Instrument Flight Procedures,"Aviation, Marine & Navigation"
+Kayaking & Sea Kayak Roll Techniques,"Aviation, Marine & Navigation"
+"Marine Knots (Bowline, Clove Hitch, Cleat Hitch)","Aviation, Marine & Navigation"
+Marine VHF Radio & Mayday Protocols,"Aviation, Marine & Navigation"
+Outboard Motor Maintenance & Winterization,"Aviation, Marine & Navigation"
+Private Pilot Ground School Fundamentals,"Aviation, Marine & Navigation"
+Radio Navigation (VOR / GPS / ILS),"Aviation, Marine & Navigation"
+Sailboat Rigging & Sail Trimming (Tacking / Gybing),"Aviation, Marine & Navigation"
+Scuba Diving (PADI Open Water Theory),"Aviation, Marine & Navigation"
+Stand Up Paddleboarding (SUP) Technique,"Aviation, Marine & Navigation"
+Underwater Navigation with Compass,"Aviation, Marine & Navigation"
+VFR Flight Planning & Sectional Charts,"Aviation, Marine & Navigation"
+ASP.NET Core,Backend & Server Architecture
+AWS Lambda Backend,Backend & Server Architecture
+Actix Web (Rust),Backend & Server Architecture
+Apache Kafka,Backend & Server Architecture
+Apollo Server,Backend & Server Architecture
+Axum (Rust),Backend & Server Architecture
+Azure Functions,Backend & Server Architecture
+CQRS Architecture,Backend & Server Architecture
+Celery Task Queue,Backend & Server Architecture
+Database Connection Pooling,Backend & Server Architecture
+Django,Backend & Server Architecture
+Domain-Driven Design (DDD),Backend & Server Architecture
+Drizzle ORM,Backend & Server Architecture
+Echo (Go),Backend & Server Architecture
+Entity Framework Core,Backend & Server Architecture
+Event-Driven Architecture,Backend & Server Architecture
+Express.js,Backend & Server Architecture
+FastAPI,Backend & Server Architecture
+Fastify,Backend & Server Architecture
+Fiber (Go),Backend & Server Architecture
+Flask,Backend & Server Architecture
+GORM (Go),Backend & Server Architecture
+Gin Framework (Go),Backend & Server Architecture
+Google Cloud Functions,Backend & Server Architecture
+GraphQL API Design,Backend & Server Architecture
+Hibernate ORM,Backend & Server Architecture
+JWT Token Authentication,Backend & Server Architecture
+Koa.js,Backend & Server Architecture
+Laravel,Backend & Server Architecture
+Memcached,Backend & Server Architecture
+Microservices Architecture,Backend & Server Architecture
+NestJS,Backend & Server Architecture
+Node.js,Backend & Server Architecture
+OAuth 2.0 & OIDC,Backend & Server Architecture
+OpenAPI / Swagger,Backend & Server Architecture
+Prisma ORM,Backend & Server Architecture
+Pydantic Validation,Backend & Server Architecture
+RESTful API Architecture,Backend & Server Architecture
+RabbitMQ Messaging,Backend & Server Architecture
+Redis Caching,Backend & Server Architecture
+Rocket (Rust),Backend & Server Architecture
+Role-Based Access Control (RBAC),Backend & Server Architecture
+Ruby on Rails,Backend & Server Architecture
+SQLAlchemy ORM,Backend & Server Architecture
+Serverless Architecture,Backend & Server Architecture
+Spring Boot,Backend & Server Architecture
+Symfony,Backend & Server Architecture
+Tornado,Backend & Server Architecture
+TypeORM,Backend & Server Architecture
+gRPC & Protocol Buffers,Backend & Server Architecture
+Agile Project Management Methodologies,"Business, Strategy & Entrepreneurship"
+Angel Investor Networking,"Business, Strategy & Entrepreneurship"
+Bootstrapping & Cash Flow Management,"Business, Strategy & Entrepreneurship"
+Brand Positioning & Brand Architecture,"Business, Strategy & Entrepreneurship"
+Business Analysis & Functional Requirements,"Business, Strategy & Entrepreneurship"
+Business Contract Review Fundamentals,"Business, Strategy & Entrepreneurship"
+Business Process Reengineering (BPR),"Business, Strategy & Entrepreneurship"
+Certified Scrum Master (CSM) Principles,"Business, Strategy & Entrepreneurship"
+Change Management (Kotter 8-Step Model),"Business, Strategy & Entrepreneurship"
+Competitive Intelligence & Porter Five Forces,"Business, Strategy & Entrepreneurship"
+Corporate Governance & Compliance,"Business, Strategy & Entrepreneurship"
+Corporate Social Responsibility (CSR) Strategies,"Business, Strategy & Entrepreneurship"
+Crisis Management & Strategic PR,"Business, Strategy & Entrepreneurship"
+Customer Relationship Management (CRM Architecture),"Business, Strategy & Entrepreneurship"
+Discounted Cash Flow (DCF) Valuation,"Business, Strategy & Entrepreneurship"
+E-Commerce Business Model Strategy,"Business, Strategy & Entrepreneurship"
+Enterprise Risk Management (ERM),"Business, Strategy & Entrepreneurship"
+Executive Coaching & Leadership Development,"Business, Strategy & Entrepreneurship"
+Financial Modeling for Startups in Excel,"Business, Strategy & Entrepreneurship"
+Franchise Business Operations,"Business, Strategy & Entrepreneurship"
+High-Stakes Negotiation Tactics,"Business, Strategy & Entrepreneurship"
+Intellectual Property & Trademark Basics,"Business, Strategy & Entrepreneurship"
+Kanban Board Workflow Management,"Business, Strategy & Entrepreneurship"
+Lean Startup Build-Measure-Learn Loop,"Business, Strategy & Entrepreneurship"
+Market Research & Customer Discovery,"Business, Strategy & Entrepreneurship"
+Mergers & Acquisitions (M&A) Due Diligence,"Business, Strategy & Entrepreneurship"
+OKRs (Objectives and Key Results) Setting,"Business, Strategy & Entrepreneurship"
+Operations Management & Process Mapping,"Business, Strategy & Entrepreneurship"
+Organizational Behavior & Corporate Culture,"Business, Strategy & Entrepreneurship"
+Outsourcing & Offshore Team Management,"Business, Strategy & Entrepreneurship"
+Pricing Strategies (Value-Based / Freemium / Tiered),"Business, Strategy & Entrepreneurship"
+Product Management Roadmap Execution,"Business, Strategy & Entrepreneurship"
+Public Speaking & Executive Presence,"Business, Strategy & Entrepreneurship"
+Six Sigma Green Belt Methodologies,"Business, Strategy & Entrepreneurship"
+Stakeholder Expectation Management,"Business, Strategy & Entrepreneurship"
+Strategic Partnerships & Business Development,"Business, Strategy & Entrepreneurship"
+Strategic Planning & SWOT Analysis,"Business, Strategy & Entrepreneurship"
+Supply Chain Management & Logistics,"Business, Strategy & Entrepreneurship"
+Team Building & Cross-Functional Leadership,"Business, Strategy & Entrepreneurship"
+Venture Capital Fundraising & Pitch Decks,"Business, Strategy & Entrepreneurship"
+AWS CloudFront CDN,Cloud Computing & Infrastructure
+AWS EC2 Virtual Servers,Cloud Computing & Infrastructure
+AWS ECS Container Service,Cloud Computing & Infrastructure
+AWS EKS Kubernetes Service,Cloud Computing & Infrastructure
+AWS IAM Security,Cloud Computing & Infrastructure
+AWS Lambda Serverless,Cloud Computing & Infrastructure
+AWS RDS & Aurora,Cloud Computing & Infrastructure
+AWS S3 Object Storage,Cloud Computing & Infrastructure
+AWS VPC Networking,Cloud Computing & Infrastructure
+Amazon Web Services (AWS Architecture),Cloud Computing & Infrastructure
+Ansible Configuration Management,Cloud Computing & Infrastructure
+Apache HTTP Web Server,Cloud Computing & Infrastructure
+Azure App Services,Cloud Computing & Infrastructure
+Azure Blob Storage,Cloud Computing & Infrastructure
+Azure Kubernetes Service (AKS),Cloud Computing & Infrastructure
+Azure Virtual Machines,Cloud Computing & Infrastructure
+Cloudflare DNS & CDN,Cloud Computing & Infrastructure
+Disaster Recovery Planning,Cloud Computing & Infrastructure
+Docker Compose,Cloud Computing & Infrastructure
+Docker Containerization,Cloud Computing & Infrastructure
+GCP BigQuery Cloud,Cloud Computing & Infrastructure
+GCP Cloud Storage,Cloud Computing & Infrastructure
+GCP Compute Engine,Cloud Computing & Infrastructure
+GCP Google Kubernetes Engine (GKE),Cloud Computing & Infrastructure
+Google Cloud Platform (GCP),Cloud Computing & Infrastructure
+HAProxy Load Balancing,Cloud Computing & Infrastructure
+Infrastructure Monitoring,Cloud Computing & Infrastructure
+Kubernetes Cluster Management,Cloud Computing & Infrastructure
+Kubernetes ConfigMaps & Secrets,Cloud Computing & Infrastructure
+Kubernetes Helm Charts,Cloud Computing & Infrastructure
+Kubernetes Ingress & Services,Cloud Computing & Infrastructure
+Linux Server Administration,Cloud Computing & Infrastructure
+Microsoft Azure Fundamentals,Cloud Computing & Infrastructure
+Nginx Web Server & Reverse Proxy,Cloud Computing & Infrastructure
+Red Hat Enterprise Linux (RHEL),Cloud Computing & Infrastructure
+Serverless Framework,Cloud Computing & Infrastructure
+Site Reliability Engineering (SRE),Cloud Computing & Infrastructure
+Terraform Cloud,Cloud Computing & Infrastructure
+Terraform Infrastructure as Code,Cloud Computing & Infrastructure
+Ubuntu / Debian Server Management,Cloud Computing & Infrastructure
+3D Modeling for Fabrication (Autodesk Fusion 360),"Crafts, DIY, Maker & Fabrication"
+3D Printer Calibration & Bed Leveling (FDM / SLA),"Crafts, DIY, Maker & Fabrication"
+3D Slicer Configuration (OrcaSlicer / Bambu Studio / Cura),"Crafts, DIY, Maker & Fabrication"
+Amigurumi Stuffed Toy Crocheting,"Crafts, DIY, Maker & Fabrication"
+Arduino C++ Microcontroller Programming,"Crafts, DIY, Maker & Fabrication"
+"Blacksmithing Basics (Forging, Tapering, Anvil Work)","Crafts, DIY, Maker & Fabrication"
+Bookbinding & Custom Leather Journal Crafting,"Crafts, DIY, Maker & Fabrication"
+CNC Router Setup & G-Code Generation,"Crafts, DIY, Maker & Fabrication"
+CO2 & Diode Laser Cutting / Engraving,"Crafts, DIY, Maker & Fabrication"
+"Candle Making (Soy Wax, Coconut Wax, Fragrance Load)","Crafts, DIY, Maker & Fabrication"
+"Ceramic Handbuilding (Pinch Pots, Coils, Slab Construction)","Crafts, DIY, Maker & Fabrication"
+Ceramic Underglazing & High-Fire Glaze Chemistry,"Crafts, DIY, Maker & Fabrication"
+"Cold Process Soap Making (Lye Safety, Superfatting)","Crafts, DIY, Maker & Fabrication"
+"Crochet Stitches (Single, Double, Treble, Magic Ring)","Crafts, DIY, Maker & Fabrication"
+Custom Furniture Building & Table Construction,"Crafts, DIY, Maker & Fabrication"
+Custom PCB Design with KiCAD,"Crafts, DIY, Maker & Fabrication"
+Epoxy Resin Art & Live-Edge River Tables,"Crafts, DIY, Maker & Fabrication"
+Garment Pattern Drafting & Alterations,"Crafts, DIY, Maker & Fabrication"
+Hand Embroidery & Decorative Stitches,"Crafts, DIY, Maker & Fabrication"
+"Hand Tool Woodworking (Chisels, Hand Planes, Japanese Saws)","Crafts, DIY, Maker & Fabrication"
+"Knitting Basics (Cast On, Knit, Purl, Bind Off)","Crafts, DIY, Maker & Fabrication"
+Knitting Sweaters & Circular Needle Work,"Crafts, DIY, Maker & Fabrication"
+"Leather Wallet, Belt & Bag Fabrication","Crafts, DIY, Maker & Fabrication"
+Leathercraft Pattern Cutting & Pricking Irons,"Crafts, DIY, Maker & Fabrication"
+Macrame Knots & Boho Wall Hangings,"Crafts, DIY, Maker & Fabrication"
+Miniature Painting (Warhammer / Tabletop Miniatures),"Crafts, DIY, Maker & Fabrication"
+Origami & Paper Sculpture Engineering,"Crafts, DIY, Maker & Fabrication"
+"Pottery Wheel Throwing (Centering, Pulling, Trimming)","Crafts, DIY, Maker & Fabrication"
+Precious Metal Clay (PMC) Silver Jewelry,"Crafts, DIY, Maker & Fabrication"
+Pyrography & Wood Burning Art,"Crafts, DIY, Maker & Fabrication"
+Quilting Block Assembly & Free-Motion Quilting,"Crafts, DIY, Maker & Fabrication"
+Raspberry Pi Linux Hardware Projects,"Crafts, DIY, Maker & Fabrication"
+Saddle Stitching by Hand for Leather Goods,"Crafts, DIY, Maker & Fabrication"
+Sewing Machine Operation & Threading,"Crafts, DIY, Maker & Fabrication"
+SolidWorks Mechanical Part Design,"Crafts, DIY, Maker & Fabrication"
+Stained Glass Foiling (Tiffany Method) & Soldering,"Crafts, DIY, Maker & Fabrication"
+Through-Hole & SMD Soldering Techniques,"Crafts, DIY, Maker & Fabrication"
+Wire Wrapping & Beaded Jewelry Design,"Crafts, DIY, Maker & Fabrication"
+"Wood Finishing (Staining, Polyurethane, Tung Oil, Danish Oil)","Crafts, DIY, Maker & Fabrication"
+"Woodworking Joinery (Mortise & Tenon, Dovetails, Pocket Holes)","Crafts, DIY, Maker & Fabrication"
+"Artisan Cheese Making (Mozzarella, Ricotta, Cheddar)","Culinary Arts, Baking & Beverage Craft"
+Artisan Sourdough Bread & Wild Yeast Starters,"Culinary Arts, Baking & Beverage Craft"
+Asian Wok Cooking & High-Heat Stir-Frying,"Culinary Arts, Baking & Beverage Craft"
+"Authentic Mexican Salsas, Mole & Taco Craft","Culinary Arts, Baking & Beverage Craft"
+Authentic Ramen Broth (Tonkotsu / Shoyu / Miso),"Culinary Arts, Baking & Beverage Craft"
+"Bar Equipment Mastery (Shakers, Jiggers, Strainers)","Culinary Arts, Baking & Beverage Craft"
+Beef Cuts & Steak Searing Techniques,"Culinary Arts, Baking & Beverage Craft"
+"Cake Baking, Layering & Crumb Coating","Culinary Arts, Baking & Beverage Craft"
+Chocolate Tempering & Handcrafted Truffles,"Culinary Arts, Baking & Beverage Craft"
+Craft Beer Homebrewing & All-Grain Mashing,"Culinary Arts, Baking & Beverage Craft"
+Craft Cocktail Mixology & Classic Cocktails,"Culinary Arts, Baking & Beverage Craft"
+Dessert Plating & Coulis Garnishing,"Culinary Arts, Baking & Beverage Craft"
+"Espresso Machine Operation, Dialing In & Latte Art","Culinary Arts, Baking & Beverage Craft"
+Fondant Modeling & Sugar Flower Art,"Culinary Arts, Baking & Beverage Craft"
+Food Safety & ServSafe Hygiene Standards,"Culinary Arts, Baking & Beverage Craft"
+"French Pastry & Viennoiserie (Croissants, Pain au Chocolat)","Culinary Arts, Baking & Beverage Craft"
+Gluten-Free Baking Substitutions & Science,"Culinary Arts, Baking & Beverage Craft"
+Gourmet Plant-Based & Vegan Cooking,"Culinary Arts, Baking & Beverage Craft"
+"Handmade Italian Pasta (Tagliatelle, Ravioli, Gnocchi)","Culinary Arts, Baking & Beverage Craft"
+Herb & Spice Flavor Profiles Around the World,"Culinary Arts, Baking & Beverage Craft"
+Home Food Dehydration & Jerky Making,"Culinary Arts, Baking & Beverage Craft"
+Home Pressure Canning & Jam Preserving,"Culinary Arts, Baking & Beverage Craft"
+Homemade Pizza Dough & High-Temp Baking,"Culinary Arts, Baking & Beverage Craft"
+"Indian Spicing, Tadka & Curry Making","Culinary Arts, Baking & Beverage Craft"
+Kitchen Inventory & Food Cost Management,"Culinary Arts, Baking & Beverage Craft"
+"Knife Handling & Precision Knife Cuts (Julienne, Brunoise, Chiffonade)","Culinary Arts, Baking & Beverage Craft"
+Kombucha & Water Kefir Home Brewing,"Culinary Arts, Baking & Beverage Craft"
+"Lacto-Fermentation (Kimchi, Sauerkraut, Pickles)","Culinary Arts, Baking & Beverage Craft"
+Modern Culinary Food Plating & Presentation,"Culinary Arts, Baking & Beverage Craft"
+Molecular Gastronomy (Spherification & Foams),"Culinary Arts, Baking & Beverage Craft"
+Poultry Butchery & Roasting Techniques,"Culinary Arts, Baking & Beverage Craft"
+Seafood Filleting & Cooking Methods,"Culinary Arts, Baking & Beverage Craft"
+Sommelier Wine Tasting & Food Pairing Principles,"Culinary Arts, Baking & Beverage Craft"
+Sous Vide Precision Cooking & Searing,"Culinary Arts, Baking & Beverage Craft"
+"Specialty Coffee Pour-Over Brewing (V60, Chemex, Aeropress)","Culinary Arts, Baking & Beverage Craft"
+"Texas Low & Slow BBQ Smoking (Brisket, Ribs, Pulled Pork)","Culinary Arts, Baking & Beverage Craft"
+"The 5 French Mother Sauces (Béchamel, Velouté, Espagnole, Tomato, Hollandaise)","Culinary Arts, Baking & Beverage Craft"
+Traditional Japanese Sushi & Nigiri Craft,"Culinary Arts, Baking & Beverage Craft"
+Vegetarian Mediterranean Cooking,"Culinary Arts, Baking & Beverage Craft"
+"Éclairs, Cream Puffs & Choux Pastry","Culinary Arts, Baking & Beverage Craft"
+Bavarian Pretzels & Lye Bath Dipping,Culinary Pastry & Bakery Specialties
+Brioche Dough & Challah Braiding,Culinary Pastry & Bakery Specialties
+Choux Pastry (Gougères & Paris-Brest),Culinary Pastry & Bakery Specialties
+"Custards, Curds & Crème Brûlée Torching",Culinary Pastry & Bakery Specialties
+Fruit Tart Geometry & Glaze Coating,Culinary Pastry & Bakery Specialties
+Gelato & Sorbet Formulation & Brix Balance,Culinary Pastry & Bakery Specialties
+Gluten-Free Artisan Bread Formulations,Culinary Pastry & Bakery Specialties
+Laminated Dough & Viennoiserie Turnings,Culinary Pastry & Bakery Specialties
+Macaron Shells (Italian vs French Meringue),Culinary Pastry & Bakery Specialties
+"Meringue Variations (French, Swiss, Italian)",Culinary Pastry & Bakery Specialties
+Mirror Glaze & Entremet Assembly,Culinary Pastry & Bakery Specialties
+Panettone Natural Fermentation & Hanging,Culinary Pastry & Bakery Specialties
+Puff Pastry (Mille-Feuille / Palmiers),Culinary Pastry & Bakery Specialties
+Royal Icing Cookie Piping & Flooding,Culinary Pastry & Bakery Specialties
+Sourdough Baguettes with Crisp Crumb,Culinary Pastry & Bakery Specialties
+Sourdough Pizza Dough 72-Hour Cold Ferment,Culinary Pastry & Bakery Specialties
+Sugar Pulling & Blown Sugar Sculptures,Culinary Pastry & Bakery Specialties
+Tempered Chocolate Showpieces & Bonbons,Culinary Pastry & Bakery Specialties
+Vegan French Macarons with Aquafaba,Culinary Pastry & Bakery Specialties
+Wafer Paper & Gumpaste Realistic Flowers,Culinary Pastry & Bakery Specialties
+AWS Cloud Security,Cybersecurity & Ethical Hacking
+Azure Security Center,Cybersecurity & Ethical Hacking
+Burp Suite Professional,Cybersecurity & Ethical Hacking
+CompTIA Security+ Mastery,Cybersecurity & Ethical Hacking
+Cross-Site Request Forgery (CSRF) Prevention,Cybersecurity & Ethical Hacking
+Cross-Site Scripting (XSS) Mitigation,Cybersecurity & Ethical Hacking
+Cryptography & Encryption (AES / RSA / ECC),Cybersecurity & Ethical Hacking
+Cyber Threat Intelligence (OSINT),Cybersecurity & Ethical Hacking
+Digital Forensics (Autopsy / Volatility),Cybersecurity & Ethical Hacking
+Ethical Hacking & Penetration Testing,Cybersecurity & Ethical Hacking
+Firewall Rule Configuration,Cybersecurity & Ethical Hacking
+Identity & Access Management (IAM & MFA),Cybersecurity & Ethical Hacking
+Incident Handling & Response Plans,Cybersecurity & Ethical Hacking
+Intrusion Detection Systems (Snort / Suricata),Cybersecurity & Ethical Hacking
+MITRE ATT&CK Mapping,Cybersecurity & Ethical Hacking
+Malware Analysis Fundamentals,Cybersecurity & Ethical Hacking
+Metasploit Framework,Cybersecurity & Ethical Hacking
+Network Penetration Testing,Cybersecurity & Ethical Hacking
+Nmap Port Scanning,Cybersecurity & Ethical Hacking
+OWASP Top 10 Remediation,Cybersecurity & Ethical Hacking
+Public Key Infrastructure (PKI),Cybersecurity & Ethical Hacking
+Reverse Engineering (Ghidra / IDA Pro),Cybersecurity & Ethical Hacking
+SIEM Management (Splunk / QRadar / Sentinel),Cybersecurity & Ethical Hacking
+SQL Injection (SQLi) Prevention,Cybersecurity & Ethical Hacking
+Security Operations Center (SOC) Analysis,Cybersecurity & Ethical Hacking
+Server-Side Request Forgery (SSRF) Defense,Cybersecurity & Ethical Hacking
+Social Engineering Awareness,Cybersecurity & Ethical Hacking
+Web App Penetration Testing,Cybersecurity & Ethical Hacking
+Wireshark Packet Analysis,Cybersecurity & Ethical Hacking
+Zero Trust Network Architecture (ZTNA),Cybersecurity & Ethical Hacking
+A/B Testing & Experimentation,"Data Science, Big Data & Analytics"
+Amazon Redshift,"Data Science, Big Data & Analytics"
+Apache Airflow,"Data Science, Big Data & Analytics"
+Apache Flink,"Data Science, Big Data & Analytics"
+Apache Spark (PySpark),"Data Science, Big Data & Analytics"
+Bayesian Data Analysis,"Data Science, Big Data & Analytics"
+Clustering (K-Means / DBSCAN),"Data Science, Big Data & Analytics"
+Customer Churn Prediction,"Data Science, Big Data & Analytics"
+Customer Lifetime Value (CLV),"Data Science, Big Data & Analytics"
+Dagster Orchestration,"Data Science, Big Data & Analytics"
+Data Analysis with Pandas,"Data Science, Big Data & Analytics"
+Data Cleaning & Imputation,"Data Science, Big Data & Analytics"
+Data Quality Testing,"Data Science, Big Data & Analytics"
+Data Warehousing,"Data Science, Big Data & Analytics"
+Databricks Lakehouse,"Data Science, Big Data & Analytics"
+Dimensionality Reduction (PCA / t-SNE),"Data Science, Big Data & Analytics"
+ETL Pipeline Design,"Data Science, Big Data & Analytics"
+Excel Advanced Formulas,"Data Science, Big Data & Analytics"
+Excel VBA & Macros,"Data Science, Big Data & Analytics"
+Exploratory Data Analysis (EDA),"Data Science, Big Data & Analytics"
+Google BigQuery,"Data Science, Big Data & Analytics"
+Google Looker Studio,"Data Science, Big Data & Analytics"
+Linear & Logistic Regression,"Data Science, Big Data & Analytics"
+Market Basket Analysis,"Data Science, Big Data & Analytics"
+Matplotlib Visualization,"Data Science, Big Data & Analytics"
+Microsoft Power BI,"Data Science, Big Data & Analytics"
+NumPy Numerical Computing,"Data Science, Big Data & Analytics"
+Plotly Interactive Dashboards,"Data Science, Big Data & Analytics"
+Prefect Orchestration,"Data Science, Big Data & Analytics"
+Probability Theory & Distributions,"Data Science, Big Data & Analytics"
+SQL for Data Analytics,"Data Science, Big Data & Analytics"
+SciPy,"Data Science, Big Data & Analytics"
+Seaborn Statistical Plots,"Data Science, Big Data & Analytics"
+Snowflake Data Warehouse,"Data Science, Big Data & Analytics"
+Spark Streaming,"Data Science, Big Data & Analytics"
+Statistical Hypothesis Testing (t-tests / ANOVA),"Data Science, Big Data & Analytics"
+Tableau Desktop,"Data Science, Big Data & Analytics"
+Web Scraping (BeautifulSoup / Playwright),"Data Science, Big Data & Analytics"
+Window Functions in SQL,"Data Science, Big Data & Analytics"
+dbt (Data Build Tool),"Data Science, Big Data & Analytics"
+ACID Transactions,Databases & Storage
+Amazon Aurora,Databases & Storage
+Amazon DynamoDB,Databases & Storage
+Apache Cassandra,Databases & Storage
+CAP Theorem Architecture,Databases & Storage
+ClickHouse OLAP DB,Databases & Storage
+CockroachDB Distributed SQL,Databases & Storage
+Couchbase NoSQL,Databases & Storage
+Database Index Optimization,Databases & Storage
+Database Migrations (Alembic / Flyway),Databases & Storage
+Database Replication,Databases & Storage
+Database Sharding & Partitioning,Databases & Storage
+DuckDB Analytical DB,Databases & Storage
+Elasticsearch Search Engine,Databases & Storage
+Google Cloud Firestore,Databases & Storage
+InfluxDB Time-Series,Databases & Storage
+MariaDB,Databases & Storage
+Microsoft SQL Server (T-SQL),Databases & Storage
+MongoDB Document DB,Databases & Storage
+MySQL Database,Databases & Storage
+Neo4j Graph Database,Databases & Storage
+OpenSearch Management,Databases & Storage
+Oracle Database,Databases & Storage
+PostgreSQL Advanced,Databases & Storage
+Query Execution Plan Tuning (EXPLAIN),Databases & Storage
+Redis In-Memory DB,Databases & Storage
+SQLite Database,Databases & Storage
+Supabase PostgreSQL,Databases & Storage
+TimescaleDB Time-Series,Databases & Storage
+ArgoCD GitOps,"DevOps, CI/CD & Observability"
+Blue-Green Deployments,"DevOps, CI/CD & Observability"
+Build Automation,"DevOps, CI/CD & Observability"
+Canary Deployments,"DevOps, CI/CD & Observability"
+Chaos Engineering,"DevOps, CI/CD & Observability"
+CircleCI,"DevOps, CI/CD & Observability"
+Container Vulnerability Scanning (Trivy),"DevOps, CI/CD & Observability"
+Continuous Security (DevSecOps),"DevOps, CI/CD & Observability"
+Datadog APM & Metrics,"DevOps, CI/CD & Observability"
+ELK Stack (Elasticsearch / Logstash / Kibana),"DevOps, CI/CD & Observability"
+Flux GitOps,"DevOps, CI/CD & Observability"
+Git Branching Strategies (GitFlow / Trunk-Based),"DevOps, CI/CD & Observability"
+GitHub Actions CI/CD,"DevOps, CI/CD & Observability"
+GitLab CI/CD Pipelines,"DevOps, CI/CD & Observability"
+Grafana Dashboards,"DevOps, CI/CD & Observability"
+Grafana Loki Logging,"DevOps, CI/CD & Observability"
+Jaeger Distributed Tracing,"DevOps, CI/CD & Observability"
+Jenkins Automation Server,"DevOps, CI/CD & Observability"
+Linux Performance Tuning,"DevOps, CI/CD & Observability"
+New Relic Observability,"DevOps, CI/CD & Observability"
+OpenTelemetry Tracing,"DevOps, CI/CD & Observability"
+PFSense Firewall DevOps,"DevOps, CI/CD & Observability"
+PromQL Query Language,"DevOps, CI/CD & Observability"
+Prometheus Metrics Monitoring,"DevOps, CI/CD & Observability"
+Release Engineering,"DevOps, CI/CD & Observability"
+Secret Management (HashiCorp Vault / AWS Secrets Manager),"DevOps, CI/CD & Observability"
+Semantic Versioning,"DevOps, CI/CD & Observability"
+Sentry Real-Time Error Tracking,"DevOps, CI/CD & Observability"
+SonarQube Code Quality Scanning,"DevOps, CI/CD & Observability"
+Zero Downtime Deployments,"DevOps, CI/CD & Observability"
+Analog Drum Machine Programming (Roland TR-808/909),Digital Audio Workstation & Synth Mastery
+Arturia V Collection Classic Synth Patching,Digital Audio Workstation & Synth Mastery
+Binaural 3D Spatial Audio Mixing,Digital Audio Workstation & Synth Mastery
+Bitwig Studio Modular Grid Sound Design,Digital Audio Workstation & Synth Mastery
+Control Voltage (CV) & Gate Sequencing,Digital Audio Workstation & Synth Mastery
+Decent Sampler Instrument Creation,Digital Audio Workstation & Synth Mastery
+Dolby Atmos Spatial Audio Bed & Object Panning,Digital Audio Workstation & Synth Mastery
+Granular Synthesis (Granulator II / Portal),Digital Audio Workstation & Synth Mastery
+Kontakt Custom Instrument Scripting (KSP),Digital Audio Workstation & Synth Mastery
+MIDI Controller Mapping & Custom Scripts,Digital Audio Workstation & Synth Mastery
+Mastering Chain Order & Linear Phase EQ,Digital Audio Workstation & Synth Mastery
+Modular Eurorack Synthesis Patching,Digital Audio Workstation & Synth Mastery
+Parallel Drum Compression (New York Compression),Digital Audio Workstation & Synth Mastery
+Reason Rack Routing & Patching,Digital Audio Workstation & Synth Mastery
+Remixing Stems & Acapella Isolation (Spleeter / UVR),Digital Audio Workstation & Synth Mastery
+Sidechain Compression Pumping Effects,Digital Audio Workstation & Synth Mastery
+Stage Lighting Control via MIDI / DMX,Digital Audio Workstation & Synth Mastery
+Stem Mastering & Multitrack Delivery,Digital Audio Workstation & Synth Mastery
+Synthesizer Maintenance & Potentiometer Cleaning,Digital Audio Workstation & Synth Mastery
+Vocal Chop Production & Pitch Shifting,Digital Audio Workstation & Synth Mastery
+ADR (Automated Dialogue Replacement) Recording,Digital Filmmaking & Screen Production
+Behind the Scenes (EPK) Video Capture,Digital Filmmaking & Screen Production
+Camera Shot Lists & Storyboard Breakdown,Digital Filmmaking & Screen Production
+Color Management (ACES / Rec.709 Workflow),Digital Filmmaking & Screen Production
+Crowdfunding Video Production & Campaign Strategy,Digital Filmmaking & Screen Production
+Deliverables for Film Festivals (DCP Mastering),Digital Filmmaking & Screen Production
+Directing Actors for Camera vs Stage,Digital Filmmaking & Screen Production
+Film Distribution Strategy & Aggregators,Digital Filmmaking & Screen Production
+Lighting Schemes (High-Key vs Low-Key Film Noir),Digital Filmmaking & Screen Production
+Location Scouting & Permit Compliance,Digital Filmmaking & Screen Production
+Look Development & Custom Film LUT Creation,Digital Filmmaking & Screen Production
+Micro-Budget Feature Film Financing,Digital Filmmaking & Screen Production
+Motion Graphics Lower Thirds & Title Sequences,Digital Filmmaking & Screen Production
+Multi-Track Sync in Post-Production,Digital Filmmaking & Screen Production
+Rough Cut to Fine Cut Editing Workflow,Digital Filmmaking & Screen Production
+Short Film Pacing & Festival Submissions,Digital Filmmaking & Screen Production
+Sound Design & Room Tone Foley Replacement,Digital Filmmaking & Screen Production
+Sound Recording with Boom Pole & Shotgun Mic,Digital Filmmaking & Screen Production
+Video Transcoding & Apple ProRes Standards,Digital Filmmaking & Screen Production
+Visual Effects Plate Clean-Up & Wire Removal,Digital Filmmaking & Screen Production
+Affiliate Marketing Program Setup,"Digital Marketing, Advertising & Sales"
+Amazon FBA Product Listing Optimization,"Digital Marketing, Advertising & Sales"
+Apple Search Ads (ASA),"Digital Marketing, Advertising & Sales"
+B2B Outbound Prospecting & Cold Emailing,"Digital Marketing, Advertising & Sales"
+Brand Narrative & Storytelling Frameworks,"Digital Marketing, Advertising & Sales"
+Cold Calling Mastery & Handling Objections,"Digital Marketing, Advertising & Sales"
+Content Marketing Strategy & Calendars,"Digital Marketing, Advertising & Sales"
+Conversion Rate Optimization (CRO & Heatmaps),"Digital Marketing, Advertising & Sales"
+Customer Retention & Loyalty Program Design,"Digital Marketing, Advertising & Sales"
+Direct Response Copywriting,"Digital Marketing, Advertising & Sales"
+Email Marketing Strategy with Klaviyo,"Digital Marketing, Advertising & Sales"
+Email Newsletter Automation with Mailchimp,"Digital Marketing, Advertising & Sales"
+Event Marketing & Trade Show Strategy,"Digital Marketing, Advertising & Sales"
+Google Ads Display & Performance Max,"Digital Marketing, Advertising & Sales"
+Google Ads Search Campaigns (PPC),"Digital Marketing, Advertising & Sales"
+Google Search Console & GA4 Setup,"Digital Marketing, Advertising & Sales"
+Guerrilla & Growth Hacking Marketing,"Digital Marketing, Advertising & Sales"
+High-Ticket Sales Closing Techniques,"Digital Marketing, Advertising & Sales"
+HubSpot Inbound Marketing Methodology,"Digital Marketing, Advertising & Sales"
+Influencer Outreach & Contract Negotiation,"Digital Marketing, Advertising & Sales"
+Landing Page Copywriting & Conversion,"Digital Marketing, Advertising & Sales"
+Link Building & Off-Page SEO Strategies,"Digital Marketing, Advertising & Sales"
+LinkedIn B2B Ads & InMail Campaigns,"Digital Marketing, Advertising & Sales"
+Meta Ads Manager (Facebook & Instagram Ads),"Digital Marketing, Advertising & Sales"
+Multi-Touch Marketing Attribution Modeling,"Digital Marketing, Advertising & Sales"
+On-Page SEO & Content Optimization,"Digital Marketing, Advertising & Sales"
+Podcast Sponsorships & Audio Advertising,"Digital Marketing, Advertising & Sales"
+Press Release Writing & Media Pitching,"Digital Marketing, Advertising & Sales"
+Retargeting Campaigns & Pixel Tracking,"Digital Marketing, Advertising & Sales"
+SMS Marketing & WhatsApp Campaigns,"Digital Marketing, Advertising & Sales"
+Sales Funnel Design (ClickFunnels / Leadpages),"Digital Marketing, Advertising & Sales"
+Salesforce CRM Pipeline Management,"Digital Marketing, Advertising & Sales"
+Search Engine Optimization (SEO Fundamentals),"Digital Marketing, Advertising & Sales"
+Shopify Store Optimization & Marketing,"Digital Marketing, Advertising & Sales"
+Social Media Community Management,"Digital Marketing, Advertising & Sales"
+"Technical SEO (Crawlability, Indexing, Schema)","Digital Marketing, Advertising & Sales"
+TikTok Ads & Spark Ads Campaigns,"Digital Marketing, Advertising & Sales"
+Video Sales Letter (VSL) Scripting,"Digital Marketing, Advertising & Sales"
+Viral Short-Form Video Strategy (TikTok / Reels / Shorts),"Digital Marketing, Advertising & Sales"
+Webinar Marketing & Automated Funnels,"Digital Marketing, Advertising & Sales"
+ARM Cortex-M Architecture,"Embedded Systems, IoT & Robotics"
+BLE (Bluetooth Low Energy) Development,"Embedded Systems, IoT & Robotics"
+CAN Bus Protocol in Automotive,"Embedded Systems, IoT & Robotics"
+Circuit Schematics & PCB Layout,"Embedded Systems, IoT & Robotics"
+CoAP IoT Protocol,"Embedded Systems, IoT & Robotics"
+Computer Vision on Edge Devices (OpenCV / Coral),"Embedded Systems, IoT & Robotics"
+ESP32 & ESP8266 Wi-Fi Development,"Embedded Systems, IoT & Robotics"
+Embedded C / C++ Programming,"Embedded Systems, IoT & Robotics"
+Embedded Linux & Yocto Project,"Embedded Systems, IoT & Robotics"
+Embedded Power Management & Deep Sleep,"Embedded Systems, IoT & Robotics"
+FreeRTOS Real-Time Operating System,"Embedded Systems, IoT & Robotics"
+Gazebo Robot Simulation,"Embedded Systems, IoT & Robotics"
+High-Speed PCB Routing & Signal Integrity,"Embedded Systems, IoT & Robotics"
+I2C & SPI Serial Communication,"Embedded Systems, IoT & Robotics"
+JTAG & SWD Hardware Debugging,"Embedded Systems, IoT & Robotics"
+KiCad 8 PCB Design & DRC,"Embedded Systems, IoT & Robotics"
+Kinematics & Inverse Kinematics,"Embedded Systems, IoT & Robotics"
+LIDAR Sensor Integration & Point Clouds,"Embedded Systems, IoT & Robotics"
+LoRaWAN Long Range IoT,"Embedded Systems, IoT & Robotics"
+MQTT IoT Protocol & Mosquitto Broker,"Embedded Systems, IoT & Robotics"
+MicroPython for Embedded Systems,"Embedded Systems, IoT & Robotics"
+Oscilloscope & Logic Analyzer Debugging,"Embedded Systems, IoT & Robotics"
+PID Controller Tuning & Motor Control,"Embedded Systems, IoT & Robotics"
+ROS (Robot Operating System) 2,"Embedded Systems, IoT & Robotics"
+Raspberry Pi GPIO Hardware Interfacing,"Embedded Systems, IoT & Robotics"
+SLAM (Simultaneous Localization and Mapping),"Embedded Systems, IoT & Robotics"
+STM32 Microcontroller Programming,"Embedded Systems, IoT & Robotics"
+Stepper & Servo Motor Interfacing,"Embedded Systems, IoT & Robotics"
+UART Communication & Baud Rates,"Embedded Systems, IoT & Robotics"
+Zigbee & Z-Wave Home Automation,"Embedded Systems, IoT & Robotics"
+72-Hour Survival Kit Preparation,Emergency Preparedness & Outdoor Survival
+Animal Tracking & Sign Reading,Emergency Preparedness & Outdoor Survival
+Avalanche Safety & Beacon Recovery (AIARE 1),Emergency Preparedness & Outdoor Survival
+Backpacking Gear Ultralight Planning,Emergency Preparedness & Outdoor Survival
+Bushcraft Shelter Construction,Emergency Preparedness & Outdoor Survival
+Cold Weather Hypothermia Shelter (Quinzhee / Snow Cave),Emergency Preparedness & Outdoor Survival
+Dead Reckoning & Terrain Association,Emergency Preparedness & Outdoor Survival
+Desert Heat Survival & Hydration Conservation,Emergency Preparedness & Outdoor Survival
+Edible & Medicinal Wild Plant Foraging,Emergency Preparedness & Outdoor Survival
+Emergency Food Storage & Mylar Bag Oxygen Absorbers,Emergency Preparedness & Outdoor Survival
+Emergency Go-Bag & Bug-Out Bag Planning,Emergency Preparedness & Outdoor Survival
+Emergency Radio Comms (HAM Radio / Baofeng),Emergency Preparedness & Outdoor Survival
+Ham Radio Technician License Prep,Emergency Preparedness & Outdoor Survival
+Home Generator Setup & Transfer Switches,Emergency Preparedness & Outdoor Survival
+Knot Tying for Rigging & Rescue,Emergency Preparedness & Outdoor Survival
+Land Navigation with Map & Magnetic Compass,Emergency Preparedness & Outdoor Survival
+Off-Grid Solar Battery Systems,Emergency Preparedness & Outdoor Survival
+Primitive Friction Fire (Bow Drill / Hand Drill),Emergency Preparedness & Outdoor Survival
+Signal Mirroring & Ground-to-Air Signaling,Emergency Preparedness & Outdoor Survival
+"Water Purification (Boiling, Filtering, Chemical)",Emergency Preparedness & Outdoor Survival
+Avalanche Subnets,Emerging Tech & Blockchain
+Bitcoin Scripting & Lightning Network,Emerging Tech & Blockchain
+Cardano Plutus Smart Contracts,Emerging Tech & Blockchain
+Cosmos SDK & Tendermint,Emerging Tech & Blockchain
+Cross-Chain Bridges,Emerging Tech & Blockchain
+Crypto Staking & Validator Node Setup,Emerging Tech & Blockchain
+DAO Governance Architecture,Emerging Tech & Blockchain
+DeFi Liquidity Pools (Uniswap V3/V4),Emerging Tech & Blockchain
+Decentralized Identity (DID),Emerging Tech & Blockchain
+Decentralized Oracles (Chainlink),Emerging Tech & Blockchain
+ERC-20 & ERC-721 Token Standards,Emerging Tech & Blockchain
+Ethereum Smart Contracts,Emerging Tech & Blockchain
+Ethers.js Library,Emerging Tech & Blockchain
+Filecoin Decentralized Storage,Emerging Tech & Blockchain
+Flash Loans & Arbitrage Bots,Emerging Tech & Blockchain
+Foundry Ethereum Toolchain,Emerging Tech & Blockchain
+Hardhat Development Framework,Emerging Tech & Blockchain
+IPFS Distributed Storage,Emerging Tech & Blockchain
+Layer 2 Scaling (Arbitrum / Optimism / Polygon),Emerging Tech & Blockchain
+MEV (Maximal Extractable Value) Mechanics,Emerging Tech & Blockchain
+NFT Marketplace Architecture,Emerging Tech & Blockchain
+Polkadot Substrate,Emerging Tech & Blockchain
+Quantum Computing Fundamentals,Emerging Tech & Blockchain
+Reentrancy Vulnerability Auditing,Emerging Tech & Blockchain
+Solana Development (Rust & Anchor),Emerging Tech & Blockchain
+Truffle Suite,Emerging Tech & Blockchain
+Web3 Security Auditing,Emerging Tech & Blockchain
+Web3.js Library,Emerging Tech & Blockchain
+Yield Aggregator Strategies,Emerging Tech & Blockchain
+Zero-Knowledge Proofs (zk-SNARKs),Emerging Tech & Blockchain
+Aquaponics Fish & Plant Nitrogen Cycle,"Environmental Science, Forestry & Agriculture"
+Beekeeping & Hive Inspection (Apiculture),"Environmental Science, Forestry & Agriculture"
+Beneficial Insect Habitat Creation,"Environmental Science, Forestry & Agriculture"
+Chainsaw Safety & Tree Felling Techniques,"Environmental Science, Forestry & Agriculture"
+Compost Tea Brewing & Foliar Spraying,"Environmental Science, Forestry & Agriculture"
+Cover Cropping & Nitrogen Fixation,"Environmental Science, Forestry & Agriculture"
+Forest Ecology & Native Tree Identification,"Environmental Science, Forestry & Agriculture"
+Goat & Sheep Husbandry Basics,"Environmental Science, Forestry & Agriculture"
+Grain & Legume Crop Rotation Strategies,"Environmental Science, Forestry & Agriculture"
+Greenhouse Climate & Humidity Control,"Environmental Science, Forestry & Agriculture"
+Honey Harvesting & Queen Rearing,"Environmental Science, Forestry & Agriculture"
+Livestock Grazing & Rotational Pastures,"Environmental Science, Forestry & Agriculture"
+Mushroom Cultivation (Oyster / Shiitake / Lion's Mane),"Environmental Science, Forestry & Agriculture"
+No-Till Soil Microbiology & Mycorrhizae,"Environmental Science, Forestry & Agriculture"
+Organic Pest Management (IPM Protocols),"Environmental Science, Forestry & Agriculture"
+Poultry Farming & Pastured Egg Production,"Environmental Science, Forestry & Agriculture"
+Urban Farming & Vertical Agriculture,"Environmental Science, Forestry & Agriculture"
+Vermicomposting & Worm Farm Management,"Environmental Science, Forestry & Agriculture"
+Water Harvesting & Swale Construction,"Environmental Science, Forestry & Agriculture"
+Wildland Fire Ecology & Defensible Space,"Environmental Science, Forestry & Agriculture"
+Capsule Wardrobe Planning & Curation,"Fashion Design, Textiles & Styling"
+Corsetry Construction & Steel Boning,"Fashion Design, Textiles & Styling"
+Costume Design for Period Pieces,"Fashion Design, Textiles & Styling"
+Couture Hand-Stitching & Finishes,"Fashion Design, Textiles & Styling"
+Draping on the Dress Form,"Fashion Design, Textiles & Styling"
+"Fabric Dyeing (Batik, Shibori, Indigo Vat)","Fashion Design, Textiles & Styling"
+Fashion Illustration & Croquis Sketching,"Fashion Design, Textiles & Styling"
+Fashion Merchandising & Trend Forecasting,"Fashion Design, Textiles & Styling"
+Machine Knitting & Circular Sock Knitting,"Fashion Design, Textiles & Styling"
+Millinery & Hat Making Basics,"Fashion Design, Textiles & Styling"
+Pattern Grading Across Standard Sizes,"Fashion Design, Textiles & Styling"
+Personal Color Analysis (Seasonal Palettes),"Fashion Design, Textiles & Styling"
+Shoe Making & Leather Cordwaining,"Fashion Design, Textiles & Styling"
+Silk Screen Printing on Fabric,"Fashion Design, Textiles & Styling"
+Sneaker Customization & Paint Prep,"Fashion Design, Textiles & Styling"
+Sustainable Upcycling & Reconstruction,"Fashion Design, Textiles & Styling"
+Tailoring Men's Suits (Canvas & Shoulder Pads),"Fashion Design, Textiles & Styling"
+Textile Science (Natural vs Synthetic Fibers),"Fashion Design, Textiles & Styling"
+Vintage Garment Restoration & Cleaning,"Fashion Design, Textiles & Styling"
+Wardrobe Styling for Photoshoots,"Fashion Design, Textiles & Styling"
+Algorithmic Trading Strategies in Python,"Finance, Accounting & Wealth Building"
+Commercial Real Estate Due Diligence,"Finance, Accounting & Wealth Building"
+"Commodities Trading (Gold, Oil, Agriculture)","Finance, Accounting & Wealth Building"
+"Corporate Financial Statement Analysis (P&L, Balance Sheet, Cash Flow)","Finance, Accounting & Wealth Building"
+Cost Accounting & Variance Analysis,"Finance, Accounting & Wealth Building"
+Cryptocurrency Trading & Risk Management,"Finance, Accounting & Wealth Building"
+DeFi (Decentralized Finance) Yield Farming & Staking,"Finance, Accounting & Wealth Building"
+Dividend Growth Investing Strategy,"Finance, Accounting & Wealth Building"
+"Estate Planning, Wills & Living Trusts","Finance, Accounting & Wealth Building"
+Financial Accounting & General Ledger,"Finance, Accounting & Wealth Building"
+Financial Independence / Retire Early (FIRE) Planning,"Finance, Accounting & Wealth Building"
+Forensic Accounting Basics,"Finance, Accounting & Wealth Building"
+Forex Currency Trading (FX Pairs & Pips),"Finance, Accounting & Wealth Building"
+Health Savings Accounts (HSA) Wealth Strategies,"Finance, Accounting & Wealth Building"
+Internal Auditing & SOX Compliance,"Finance, Accounting & Wealth Building"
+Macroeconomics & Interest Rate Impacts,"Finance, Accounting & Wealth Building"
+"Options Trading Strategies (Covered Calls, Spreads, Iron Condors)","Finance, Accounting & Wealth Building"
+Peer-to-Peer Lending & Alternative Investments,"Finance, Accounting & Wealth Building"
+Personal Budgeting & Debt Elimination (Snowball / Avalanche),"Finance, Accounting & Wealth Building"
+QuickBooks Online Bookkeeping,"Finance, Accounting & Wealth Building"
+"Real Estate Investment Analysis (Cap Rate, NOI, Cash-on-Cash)","Finance, Accounting & Wealth Building"
+"Retirement Planning (401k, Traditional & Roth IRA)","Finance, Accounting & Wealth Building"
+Solidity Smart Contract Development,"Finance, Accounting & Wealth Building"
+Stock Market Fundamentals & Equity Research,"Finance, Accounting & Wealth Building"
+"Technical Analysis (Candlesticks, Support/Resistance, RSI, MACD)","Finance, Accounting & Wealth Building"
+US Federal Income Tax Preparation & Deductions,"Finance, Accounting & Wealth Building"
+Value Investing Principles (Benjamin Graham & Warren Buffett),"Finance, Accounting & Wealth Building"
+Venture Capital Term Sheets & Cap Tables,"Finance, Accounting & Wealth Building"
+Web3 Architecture & Decentralized Apps,"Finance, Accounting & Wealth Building"
+Xero Cloud Accounting,"Finance, Accounting & Wealth Building"
+Acrylic Pouring & Fluid Art Cells,"Fine Arts, Painting & Sculpture"
+Alla Prima (Wet-on-Wet) Oil Painting,"Fine Arts, Painting & Sculpture"
+Bronze Casting & Lost-Wax Method,"Fine Arts, Painting & Sculpture"
+Charcoal Life Drawing & Value Studies,"Fine Arts, Painting & Sculpture"
+Clay Bust Sculpting & Facial Anatomy,"Fine Arts, Painting & Sculpture"
+Conté Crayon Anatomical Figure Studies,"Fine Arts, Painting & Sculpture"
+Cyanotype Sun Printing on Paper & Fabric,"Fine Arts, Painting & Sculpture"
+Encaustic Wax Painting & Fusion,"Fine Arts, Painting & Sculpture"
+Found Object Assemblage Sculpture,"Fine Arts, Painting & Sculpture"
+Gilding with Gold Leaf (Water & Oil Size),"Fine Arts, Painting & Sculpture"
+Gouache Opaque Painting on Dark Paper,"Fine Arts, Painting & Sculpture"
+Intaglio Etching on Copper Plates,"Fine Arts, Painting & Sculpture"
+Linocut & Woodblock Relief Printmaking,"Fine Arts, Painting & Sculpture"
+Monotype & Monoprint Printmaking,"Fine Arts, Painting & Sculpture"
+Oil Painting (Fat-over-Lean Principle & Glazing),"Fine Arts, Painting & Sculpture"
+Pastel Painting (Soft & Oil Pastels),"Fine Arts, Painting & Sculpture"
+Plaster Mold Making (Waste Molds & Piece Molds),"Fine Arts, Painting & Sculpture"
+Stone Carving with Mallet & Chisels,"Fine Arts, Painting & Sculpture"
+Watercolor Dry Brush & Lifting Highlights,"Fine Arts, Painting & Sculpture"
+Watercolor Wet-on-Wet & Wash Techniques,"Fine Arts, Painting & Sculpture"
+American Sign Language (ASL) Signs & Fingerspelling,Foreign Languages & Linguistics
+Brazilian Portuguese Conversation,Foreign Languages & Linguistics
+British Sign Language (BSL) Basics,Foreign Languages & Linguistics
+Business English for Global Professionals,Foreign Languages & Linguistics
+Business Spanish Communications,Foreign Languages & Linguistics
+Conversational Korean & Culture,Foreign Languages & Linguistics
+Conversational Mandarin for Business,Foreign Languages & Linguistics
+Conversational Spanish for Beginners,Foreign Languages & Linguistics
+Dutch Language for Beginners,Foreign Languages & Linguistics
+Egyptian Arabic Dialect Conversation,Foreign Languages & Linguistics
+English Pronunciation & Accent Reduction,Foreign Languages & Linguistics
+English as a Second Language (ESL Conversation),Foreign Languages & Linguistics
+European Portuguese Essentials,Foreign Languages & Linguistics
+French Advanced Grammar & Literature,Foreign Languages & Linguistics
+French Intermediate Conversation & Pronunciation,Foreign Languages & Linguistics
+French for Beginners & Travelers,Foreign Languages & Linguistics
+German Business Vocabulary,Foreign Languages & Linguistics
+German Conversational Fluency (B1-B2),Foreign Languages & Linguistics
+German for Beginners (A1-A2),Foreign Languages & Linguistics
+Greek Language Fundamentals,Foreign Languages & Linguistics
+Hindi Language Speaking & Devanagari Script,Foreign Languages & Linguistics
+IELTS Academic Exam Preparation,Foreign Languages & Linguistics
+Indonesian Language (Bahasa Indonesia),Foreign Languages & Linguistics
+Italian Intermediate Grammar,Foreign Languages & Linguistics
+Italian Language for Travelers & Foodies,Foreign Languages & Linguistics
+Japanese Conversational Politeness (Keigo),Foreign Languages & Linguistics
+Japanese Hiragana & Katakana Mastery,Foreign Languages & Linguistics
+Japanese JLPT Exam Preparation (N5-N1),Foreign Languages & Linguistics
+Japanese Kanji Learning Strategies,Foreign Languages & Linguistics
+Korean Hangul Alphabet & Phonetics,Foreign Languages & Linguistics
+Levantine Arabic Dialect,Foreign Languages & Linguistics
+Mandarin Chinese Character Writing (Hanzi),Foreign Languages & Linguistics
+Mandarin Chinese HSK Exam Preparation,Foreign Languages & Linguistics
+Mandarin Chinese Pinyin & Pronunciation,Foreign Languages & Linguistics
+Medical Spanish for Healthcare Professionals,Foreign Languages & Linguistics
+Modern Standard Arabic (MSA) Reading & Writing,Foreign Languages & Linguistics
+Polish Language Grammar & Vocabulary,Foreign Languages & Linguistics
+Russian Conversational Practice,Foreign Languages & Linguistics
+Russian Language Alphabet & Cases,Foreign Languages & Linguistics
+Spanish Grammar & Subjunctive Mood,Foreign Languages & Linguistics
+Swedish Language Basics,Foreign Languages & Linguistics
+TOEFL iBT Test Strategies,Foreign Languages & Linguistics
+Thai Language Script & Basics,Foreign Languages & Linguistics
+Turkish Language for Beginners,Foreign Languages & Linguistics
+Vietnamese Tones & Conversation,Foreign Languages & Linguistics
+Audio Middleware Integration (FMOD Studio),Game Development Subspecialties
+Client-Side Prediction & Server Reconciliation,Game Development Subspecialties
+Console Game Optimization (PS5 / Xbox),Game Development Subspecialties
+Custom 2D/3D Collision Detection,Game Development Subspecialties
+Dialogue & Quest Tree Systems,Game Development Subspecialties
+Facial Blendshapes & Apple ARKit Tracking,Game Development Subspecialties
+Finite State Machines for Game NPCs,Game Development Subspecialties
+Game AI & Behavior Trees,Game Development Subspecialties
+Game Analytics (GameAnalytics / Unity Analytics),Game Development Subspecialties
+Game Inventory & Loot Systems,Game Development Subspecialties
+Game Networking & Multiplayer Sync (Photon / Mirror),Game Development Subspecialties
+Game Physics Programming,Game Development Subspecialties
+HLSL / GLSL Custom Vertex & Fragment Shaders,Game Development Subspecialties
+In-Game Monetization & Battle Pass Systems,Game Development Subspecialties
+Mobile Game Performance Profiling (RenderDoc),Game Development Subspecialties
+Pathfinding Algorithms (A* / NavMesh),Game Development Subspecialties
+Procedural Dungeon Generation,Game Development Subspecialties
+Retopology for Game Characters,Game Development Subspecialties
+SpeedTree Foliage Creation,Game Development Subspecialties
+Steamworks SDK Integration,Game Development Subspecialties
+Substance Designer Procedural Materials,Game Development Subspecialties
+Unity Compute Shaders,Game Development Subspecialties
+Unreal Engine MetaSounds,Game Development Subspecialties
+Unreal Engine Niagara Particle Systems,Game Development Subspecialties
+Unreal Engine Sequencer Cinematics,Game Development Subspecialties
+Unreal Engine World Partitioning,Game Development Subspecialties
+Unreal Gameplay Ability System (GAS),Game Development Subspecialties
+Voxel Engine Development,Game Development Subspecialties
+Wwise Interactive Sound Design,Game Development Subspecialties
+ZBrush Hardsurface Booleans,Game Development Subspecialties
+Adobe Illustrator Vector Art,Graphic Design & Visual Arts
+Adobe InDesign Editorial Layout,Graphic Design & Visual Arts
+Adobe Photoshop Professional,Graphic Design & Visual Arts
+Album Art & Vinyl Packaging,Graphic Design & Visual Arts
+Apparel & Merch Design,Graphic Design & Visual Arts
+Book Cover & Jacket Design,Graphic Design & Visual Arts
+Brand Style Guide Creation,Graphic Design & Visual Arts
+Brochure & Print Layout,Graphic Design & Visual Arts
+Canva Pro Graphic Design,Graphic Design & Visual Arts
+Caricature & Cartoon Illustration,Graphic Design & Visual Arts
+Color Palette Harmony & Psychology,Graphic Design & Visual Arts
+Concept Art for Characters & Environments,Graphic Design & Visual Arts
+Digital Painting (Photoshop / Clip Studio),Graphic Design & Visual Arts
+Icon Design & SVG Systems,Graphic Design & Visual Arts
+Infographic Design & Data Storytelling,Graphic Design & Visual Arts
+Logo Design & Visual Identity,Graphic Design & Visual Arts
+Matte Painting for Film & Games,Graphic Design & Visual Arts
+Packaging & Label Design,Graphic Design & Visual Arts
+Pattern Design for Textiles,Graphic Design & Visual Arts
+Photo Frequency Separation,Graphic Design & Visual Arts
+Photo Manipulation & Surreal Compositing,Graphic Design & Visual Arts
+Photo Retouching & Beauty Clean-up,Graphic Design & Visual Arts
+Pixel Art Creation (Aseprite),Graphic Design & Visual Arts
+Poster & Billboard Design,Graphic Design & Visual Arts
+Procreate iPad Illustration,Graphic Design & Visual Arts
+Social Media Carousel & Banner Design,Graphic Design & Visual Arts
+Sticker & Badge Design,Graphic Design & Visual Arts
+Traditional & Digital Calligraphy,Graphic Design & Visual Arts
+Typography & Font Pairing,Graphic Design & Visual Arts
+Vector Mascot Design,Graphic Design & Visual Arts
+Basketball Shooting Mechanics & Ball Handling,"Health, Fitness, Athletics & Wellness"
+"Boxing Stance, Footwork & Combinations","Health, Fitness, Athletics & Wellness"
+Brazilian Jiu-Jitsu (BJJ) Ground Submissions & Escapes,"Health, Fitness, Athletics & Wellness"
+Calisthenics & Bodyweight Gymnastic Strength,"Health, Fitness, Athletics & Wellness"
+Foam Rolling & Self-Myofascial Release,"Health, Fitness, Athletics & Wellness"
+Freestyle Swimming Technique & Breath Timing,"Health, Fitness, Athletics & Wellness"
+Golf Swing Fundamentals & Driving Consistency,"Health, Fitness, Athletics & Wellness"
+Hatha Yoga Alignment & Asanas,"Health, Fitness, Athletics & Wellness"
+High-Intensity Interval Training (HIIT),"Health, Fitness, Athletics & Wellness"
+Hypertrophy & Muscle Building Protocols,"Health, Fitness, Athletics & Wellness"
+Ice Baths & Cold Exposure Therapy,"Health, Fitness, Athletics & Wellness"
+Indoor Bouldering & Rock Climbing Footwork,"Health, Fitness, Athletics & Wellness"
+"Kettlebell Training (Swings, Snatches, Turkish Get-Ups)","Health, Fitness, Athletics & Wellness"
+Macronutrient Calculation & Flexible Dieting (IIFYM),"Health, Fitness, Athletics & Wellness"
+Marathon & Half-Marathon Training Schedules,"Health, Fitness, Athletics & Wellness"
+Mat Pilates & Core Stability,"Health, Fitness, Athletics & Wellness"
+Meal Prep Strategies for Lean Muscle,"Health, Fitness, Athletics & Wellness"
+Mindfulness Meditation & Body Scans,"Health, Fitness, Athletics & Wellness"
+Mobility Training & Joint Health (CARs / FRC),"Health, Fitness, Athletics & Wellness"
+"Muay Thai Striking (Elbows, Knees, Kicks)","Health, Fitness, Athletics & Wellness"
+"Olympic Weightlifting (Snatch, Clean and Jerk)","Health, Fitness, Athletics & Wellness"
+Personal Fitness Coaching & Program Design,"Health, Fitness, Athletics & Wellness"
+Postural Restoration & Ergonomic Alignment,"Health, Fitness, Athletics & Wellness"
+"Powerlifting Mechanics (Squat, Bench Press, Deadlift)","Health, Fitness, Athletics & Wellness"
+Practical Self-Defense for Real-World Scenarios,"Health, Fitness, Athletics & Wellness"
+Reformer Pilates Techniques,"Health, Fitness, Athletics & Wellness"
+Road Cycling Endurance & Cadence Training,"Health, Fitness, Athletics & Wellness"
+Sauna Protocols for Cardiovascular Health,"Health, Fitness, Athletics & Wellness"
+Senior Fitness & Fall Prevention,"Health, Fitness, Athletics & Wellness"
+Sleep Hygiene & Circadian Rhythm Optimization,"Health, Fitness, Athletics & Wellness"
+"Soccer Dribbling, Passing & Tactical Positioning","Health, Fitness, Athletics & Wellness"
+Sports Injury Prevention & Active Recovery,"Health, Fitness, Athletics & Wellness"
+Sports Nutrition & Ergogenic Aids,"Health, Fitness, Athletics & Wellness"
+Sprint Mechanics & Acceleration Drills,"Health, Fitness, Athletics & Wellness"
+Stress Management & Nervous System Regulation,"Health, Fitness, Athletics & Wellness"
+Tennis Serve & Groundstroke Biomechanics,"Health, Fitness, Athletics & Wellness"
+Vinyasa Flow Yoga Practice,"Health, Fitness, Athletics & Wellness"
+Wim Hof & Controlled Breathwork Protocols,"Health, Fitness, Athletics & Wellness"
+Yin Yoga & Deep Fascial Release,"Health, Fitness, Athletics & Wellness"
+Youth Athletic Development & Conditioning,"Health, Fitness, Athletics & Wellness"
+ACL Injury Recovery Protocols,"Healthcare, First Aid & Sports Medicine"
+Anti-Inflammatory Nutrition & Gut Health,"Healthcare, First Aid & Sports Medicine"
+Anxiety De-escalation & Grounding Techniques,"Healthcare, First Aid & Sports Medicine"
+Basic Life Support (BLS) Techniques,"Healthcare, First Aid & Sports Medicine"
+Blood Glucose Monitoring & Diabetes Nutrition,"Healthcare, First Aid & Sports Medicine"
+Burn Management & First Aid,"Healthcare, First Aid & Sports Medicine"
+CPR & AED First Aid Certification Knowledge,"Healthcare, First Aid & Sports Medicine"
+Cardiovascular Health Metrics & Vitals,"Healthcare, First Aid & Sports Medicine"
+Choking Relief (Heimlich Maneuver),"Healthcare, First Aid & Sports Medicine"
+Concussion Recognition & Protocol,"Healthcare, First Aid & Sports Medicine"
+Ergonomic Posture & Repetitive Strain Prevention,"Healthcare, First Aid & Sports Medicine"
+Food Allergy Management & EpiPen Use,"Healthcare, First Aid & Sports Medicine"
+Fracture & Sprain Splinting,"Healthcare, First Aid & Sports Medicine"
+Heat Exhaustion & Hypothermia Management,"Healthcare, First Aid & Sports Medicine"
+Hydrotherapy & Contrast Baths,"Healthcare, First Aid & Sports Medicine"
+Hypertension Lifestyle Interventions,"Healthcare, First Aid & Sports Medicine"
+Injury Biomechanics Assessment,"Healthcare, First Aid & Sports Medicine"
+Lower Back Pain Mobility Protocols,"Healthcare, First Aid & Sports Medicine"
+Medical Terminology Fundamentals,"Healthcare, First Aid & Sports Medicine"
+Mental Health First Aid & Active Listening,"Healthcare, First Aid & Sports Medicine"
+Occupational Health & Ergonomics,"Healthcare, First Aid & Sports Medicine"
+Pediatric First Aid & Fever Management,"Healthcare, First Aid & Sports Medicine"
+Physical Therapy Exercise Prescription,"Healthcare, First Aid & Sports Medicine"
+Prenatal & Postnatal Fitness Guidance,"Healthcare, First Aid & Sports Medicine"
+Respiratory Therapy & Peak Flow Breathing,"Healthcare, First Aid & Sports Medicine"
+Rotator Cuff Rehabilitation,"Healthcare, First Aid & Sports Medicine"
+Senior Balance & Fall Risk Reduction,"Healthcare, First Aid & Sports Medicine"
+Sports Taping (Kinesiology Tape / Athletic Tape),"Healthcare, First Aid & Sports Medicine"
+Wilderness First Aid Survival Protocols,"Healthcare, First Aid & Sports Medicine"
+"Wound Care, Bandaging & Hemorrhage Control","Healthcare, First Aid & Sports Medicine"
+Airbnb / Vacation Rental Superhost Operations,"Hospitality, Tourism & Event Planning"
+Audio/Visual Staging for Corporate Galas,"Hospitality, Tourism & Event Planning"
+Banquet Event Order (BEO) Coordination,"Hospitality, Tourism & Event Planning"
+Catering Operations & Buffet Presentation,"Hospitality, Tourism & Event Planning"
+Cleaning & Sanitation SOPs for Hospitality,"Hospitality, Tourism & Event Planning"
+Corporate Conference Logistics & Stage Management,"Hospitality, Tourism & Event Planning"
+Destination Wedding Logistics,"Hospitality, Tourism & Event Planning"
+Event Budgeting & Vendor Contract Negotiation,"Hospitality, Tourism & Event Planning"
+Event Floor Plan Design (Social Tables / AllSeated),"Hospitality, Tourism & Event Planning"
+Front Desk Property Management Systems (Opera PMS),"Hospitality, Tourism & Event Planning"
+Group Travel Tour Guiding & Commentary,"Hospitality, Tourism & Event Planning"
+Guest Conflict Resolution (L.A.S.T. Method),"Hospitality, Tourism & Event Planning"
+Luxury Hotel Concierge Operations,"Hospitality, Tourism & Event Planning"
+Outdoor Festival Crowd Control & Safety,"Hospitality, Tourism & Event Planning"
+Sustainable Zero-Waste Event Planning,"Hospitality, Tourism & Event Planning"
+Table Setting Etiquette & French Service,"Hospitality, Tourism & Event Planning"
+Theme Party Concept & Decor Fabrication,"Hospitality, Tourism & Event Planning"
+Travel Itinerary Design & Destination Booking,"Hospitality, Tourism & Event Planning"
+VIP Protocol & Celebrity Rider Management,"Hospitality, Tourism & Event Planning"
+Wedding Planning Timeline & Rehearsal Flow,"Hospitality, Tourism & Event Planning"
+Anti-Money Laundering (AML) & KYC Protocols,International Business & Law
+CCPA / CPRA California Privacy Compliance,International Business & Law
+Cross-Border Supply Chain Compliance,International Business & Law
+"Cross-Cultural Business Etiquette (Japan, Germany, Brazil, UAE)",International Business & Law
+Currency Risk & Forex Hedging for Imports/Exports,International Business & Law
+Customs Clearance & Tariff Classification,International Business & Law
+"ESG (Environmental, Social, Governance) Reporting",International Business & Law
+Export Control & Sanctions Regulations,International Business & Law
+GDPR & Privacy Compliance Engineering,International Business & Law
+Global E-Commerce Logistics,International Business & Law
+Global Employment & EOR (Employer of Record),International Business & Law
+HIPAA Compliance for Health Tech,International Business & Law
+ISO 27001 Security Management,International Business & Law
+International Contract Law Fundamentals,International Business & Law
+International Tax Treaties & Double Taxation,International Business & Law
+International Trade & Incoterms 2020,International Business & Law
+Non-Disclosure Agreements (NDAs) & IP Assignment,International Business & Law
+SOC 2 Type II Certification Readiness,International Business & Law
+SaaS Terms of Service & Privacy Policies,International Business & Law
+"Software Licensing (MIT, Apache, GPL, Commercial)",International Business & Law
+Android Coroutines & Flow,Mobile App Development
+Android Jetpack Compose,Mobile App Development
+Android Retrofit,Mobile App Development
+Android Room DB,Mobile App Development
+Android XML Layouts,Mobile App Development
+App Store Optimization (ASO),Mobile App Development
+Apple App Store Connect,Mobile App Development
+Apple Push Notifications (APNs),Mobile App Development
+Capacitor Mobile,Mobile App Development
+Expo Framework,Mobile App Development
+Fastlane Mobile CI/CD,Mobile App Development
+Firebase Cloud Messaging (FCM),Mobile App Development
+Firebase Mobile SDK,Mobile App Development
+Flutter Animations,Mobile App Development
+Flutter Bloc,Mobile App Development
+Flutter Development,Mobile App Development
+Flutter Provider,Mobile App Development
+Flutter Riverpod,Mobile App Development
+Flutter Web & Desktop,Mobile App Development
+Google Play Console,Mobile App Development
+In-App Purchases (IAP),Mobile App Development
+Ionic Framework,Mobile App Development
+Mobile Deep Linking,Mobile App Development
+Mobile Offline Sync,Mobile App Development
+React Native,Mobile App Development
+React Native Reanimated,Mobile App Development
+iOS Combine Framework,Mobile App Development
+iOS Core Data & SwiftData,Mobile App Development
+iOS SwiftUI,Mobile App Development
+iOS UIKit,Mobile App Development
+Ableton Live Electronic Music Production,Music Production & Audio Engineering
+Acoustic Instrument Tracking & Microphone Techniques,Music Production & Audio Engineering
+Audio Mastering for Streaming Platforms,Music Production & Audio Engineering
+Audio Mixing Fundamentals (Gain Staging & Balance),Music Production & Audio Engineering
+Bassline Synthesis (808s & Sub Bass),Music Production & Audio Engineering
+Commercial Jingle & Ad Music Production,Music Production & Audio Engineering
+"Compressors, Limiters & Multiband Dynamics",Music Production & Audio Engineering
+Cubase DAW Orchestral Production,Music Production & Audio Engineering
+DJing with Pioneer CDJs & Rekordbox,Music Production & Audio Engineering
+DJing with Serato DJ Pro,Music Production & Audio Engineering
+Drum Programming & Groove Sequencing,Music Production & Audio Engineering
+Electronic Dance Music (EDM / House / Techno) Production,Music Production & Audio Engineering
+FL Studio Beatmaking & Arranging,Music Production & Audio Engineering
+Film & Video Game Scoring,Music Production & Audio Engineering
+Foley Sound Creation & Field Recording,Music Production & Audio Engineering
+"Hip-Hop, Trap & Drill Beat Production",Music Production & Audio Engineering
+Live Sound Mixing & Console Setup,Music Production & Audio Engineering
+Lo-Fi Hip Hop Beatmaking,Music Production & Audio Engineering
+Logic Pro Recording & Mixing,Music Production & Audio Engineering
+Loudness Standards (LUFS Normalization),Music Production & Audio Engineering
+MIDI Composition & Orchestration,Music Production & Audio Engineering
+Music Theory for Producers (Chord Progressions & Modes),Music Production & Audio Engineering
+Parametric EQ Shaping & Dynamic EQ,Music Production & Audio Engineering
+Podcast Recording & Audio Cleanup (iZotope RX),Music Production & Audio Engineering
+Pop Music Vocal Production,Music Production & Audio Engineering
+Pro Tools Professional Audio Editing,Music Production & Audio Engineering
+Reaper DAW Customization,Music Production & Audio Engineering
+"Reverb, Delay & Spatial Acoustic Design",Music Production & Audio Engineering
+Rock & Metal Guitar Mixing,Music Production & Audio Engineering
+Sampling & Sample Chopping Techniques,Music Production & Audio Engineering
+Songwriting Structure & Melodic Hooks,Music Production & Audio Engineering
+Stereo Imaging & Mid/Side Processing,Music Production & Audio Engineering
+Studio One Workflows,Music Production & Audio Engineering
+Studio Room Acoustic Treatment,Music Production & Audio Engineering
+Subtractive & FM Synthesis (Massive / FM8),Music Production & Audio Engineering
+Synthesizer Sound Design (Xfer Serum),Music Production & Audio Engineering
+Tape Saturation & Analog Warmth,Music Production & Audio Engineering
+Vocal Pitch Correction (Melodyne / Auto-Tune),Music Production & Audio Engineering
+Voiceover Processing & De-essing,Music Production & Audio Engineering
+Wavetable Synthesis (Vital / Pigments),Music Production & Audio Engineering
+5-String Banjo Scruggs Style,Musical Instruments & Vocal Training
+Acoustic Drum Kit Fundamentals & Rudiments,Musical Instruments & Vocal Training
+Acoustic Guitar Strumming & Chords,Musical Instruments & Vocal Training
+Acoustic Song Arrangement for Solo Performer,Musical Instruments & Vocal Training
+Bass Guitar Slap & Groove Playing,Musical Instruments & Vocal Training
+Bassline Walking in Jazz,Musical Instruments & Vocal Training
+Beginner Piano Fundamentals,Musical Instruments & Vocal Training
+Bel Canto Classical Singing Method,Musical Instruments & Vocal Training
+Blues Harmonica (Bending Notes),Musical Instruments & Vocal Training
+Cajon Flamenco & Acoustic Beats,Musical Instruments & Vocal Training
+Cello Performance & Tone Production,Musical Instruments & Vocal Training
+Clarinet Fundamentals,Musical Instruments & Vocal Training
+Classical Guitar Repertoire,Musical Instruments & Vocal Training
+Classical Piano Pieces & Technique,Musical Instruments & Vocal Training
+Contemporary Pop & R&B Vocal Techniques,Musical Instruments & Vocal Training
+Djembe West African Rhythms,Musical Instruments & Vocal Training
+Ear Training & Solfege Exercises,Musical Instruments & Vocal Training
+Electric Guitar Lead Playing & Pentatonic Scales,Musical Instruments & Vocal Training
+Electronic Drumming & Finger Drumming (MPC / Maschine),Musical Instruments & Vocal Training
+Expanding Vocal Range & Pitch Accuracy,Musical Instruments & Vocal Training
+Fingerstyle Guitar Techniques,Musical Instruments & Vocal Training
+Flute Breathing & Finger Technique,Musical Instruments & Vocal Training
+Harmonizing & Backing Vocal Arranging,Musical Instruments & Vocal Training
+Indian Classical Vocals (Ragas & Taals),Musical Instruments & Vocal Training
+Jazz Piano Chords & Voicings,Musical Instruments & Vocal Training
+Mandolin Chords & Tremolo,Musical Instruments & Vocal Training
+Microphone Technique for Live Singing,Musical Instruments & Vocal Training
+Music Improvisation in Any Key,Musical Instruments & Vocal Training
+Saxophone (Alto & Tenor) Embouchure & Scales,Musical Instruments & Vocal Training
+Sight-Reading Standard Sheet Music,Musical Instruments & Vocal Training
+Singing High Notes without Strain (Mix Voice),Musical Instruments & Vocal Training
+Slide Guitar Tuning & Techniques,Musical Instruments & Vocal Training
+Stage Confidence for Vocalists,Musical Instruments & Vocal Training
+Synthesizer & Keyboard Performance,Musical Instruments & Vocal Training
+Tabla Hand Drumming & Bols,Musical Instruments & Vocal Training
+Trumpet Tone & Fingerings,Musical Instruments & Vocal Training
+Ukulele Strumming & Songs,Musical Instruments & Vocal Training
+Violin Posture & Bowing Technique,Musical Instruments & Vocal Training
+Vocal Vibrato Development,Musical Instruments & Vocal Training
+Vocal Warmups & Diaphragmatic Breathing,Musical Instruments & Vocal Training
+Aerial Silks & Lyra Hoop Acrobatics,"Performing Arts, Dance & Stagecraft"
+Argentine Tango Close Embrace & Ochos,"Performing Arts, Dance & Stagecraft"
+Audiobook Narration & Character Voicing,"Performing Arts, Dance & Stagecraft"
+Bachata Sensual Body Movement & Footwork,"Performing Arts, Dance & Stagecraft"
+"Ballroom Dancing (Waltz, Foxtrot, Quickstep)","Performing Arts, Dance & Stagecraft"
+"Breakdancing (Toprock, Footwork, Freezes, Power Moves)","Performing Arts, Dance & Stagecraft"
+Circus Arts & Juggling Fundamentals,"Performing Arts, Dance & Stagecraft"
+Classical Ballet Positions & Barre Work,"Performing Arts, Dance & Stagecraft"
+Contemporary Dance Flow & Floorwork,"Performing Arts, Dance & Stagecraft"
+Costume Design & Theatrical Wardrobe,"Performing Arts, Dance & Stagecraft"
+Directing Community Theatre Productions,"Performing Arts, Dance & Stagecraft"
+Flamenco Dance & Hand Clapping (Palmas),"Performing Arts, Dance & Stagecraft"
+Hip-Hop Choreography & Urban Dance,"Performing Arts, Dance & Stagecraft"
+"Improv Comedy (Yes, And... Fundamentals)","Performing Arts, Dance & Stagecraft"
+"Jazz Dance Turns, Leaps & Flexibility","Performing Arts, Dance & Stagecraft"
+K-Pop Dance Routine Synchronization,"Performing Arts, Dance & Stagecraft"
+Magic & Sleight of Hand with Playing Cards,"Performing Arts, Dance & Stagecraft"
+Monologue Selection & Audition Mastery,"Performing Arts, Dance & Stagecraft"
+Puppetry & Hand-and-Rod Manipulation,"Performing Arts, Dance & Stagecraft"
+Salsa Dancing (Cross-Body Lead & Spin Technique),"Performing Arts, Dance & Stagecraft"
+"Stage Blocking, Movement & Presence","Performing Arts, Dance & Stagecraft"
+Stage Combat & Safe Unarmed Fights,"Performing Arts, Dance & Stagecraft"
+Stage Makeup & Prosthetics Application,"Performing Arts, Dance & Stagecraft"
+Stand-Up Comedy Set Writing & Timing,"Performing Arts, Dance & Stagecraft"
+Stanislavski & Method Acting Principles,"Performing Arts, Dance & Stagecraft"
+Tap Dance Rhythms & Time Steps,"Performing Arts, Dance & Stagecraft"
+Theatrical Lighting Design & Cueing,"Performing Arts, Dance & Stagecraft"
+Theatrical Sound Design & Stage Microphones,"Performing Arts, Dance & Stagecraft"
+Voice Acting for Animations & Video Games,"Performing Arts, Dance & Stagecraft"
+Voice Projection & Diction for Theatre,"Performing Arts, Dance & Stagecraft"
+Active Listening & Nonviolent Communication,Personal Development & Life Skills
+Assertiveness Training & Setting Boundaries,Personal Development & Life Skills
+Burnout Recovery & Stress Resilience,Personal Development & Life Skills
+Career Coaching & Career Transition Strategy,Personal Development & Life Skills
+Conflict Resolution in Personal & Work Life,Personal Development & Life Skills
+Critical Thinking & Logical Fallacy Identification,Personal Development & Life Skills
+Cross-Cultural Communication Skills,Personal Development & Life Skills
+Daily Journaling & Reflective Writing,Personal Development & Life Skills
+Digital Decluttering & Information Management (Second Brain / Obsidian),Personal Development & Life Skills
+Emotional Intelligence (Self-Awareness & Empathy),Personal Development & Life Skills
+Financial Independence Mindset & Frugality,Personal Development & Life Skills
+Goal Setting with SMART Criteria,Personal Development & Life Skills
+Habit Building (Atomic Habits Framework),Personal Development & Life Skills
+Job Interview Preparation & STAR Method Answers,Personal Development & Life Skills
+"Memory Techniques (Memory Palace, Major System)",Personal Development & Life Skills
+Mental Models for Decision Making (First Principles),Personal Development & Life Skills
+Mind Mapping & Visual Note Taking,Personal Development & Life Skills
+Mindful Living & Gratitude Practices,Personal Development & Life Skills
+Minimalism & Intentional Living,Personal Development & Life Skills
+Overcoming Procrastination & Resistance,Personal Development & Life Skills
+Personal Branding & Executive Visibility,Personal Development & Life Skills
+Personal Energy Management & Rest Cycles,Personal Development & Life Skills
+"Personal Productivity Apps (Notion, Todoist)",Personal Development & Life Skills
+Professional Networking on LinkedIn,Personal Development & Life Skills
+Public Speaking Anxiety Reduction,Personal Development & Life Skills
+Resume & Cover Letter Tailoring for ATS,Personal Development & Life Skills
+Salary & Compensation Package Negotiation,Personal Development & Life Skills
+Speed Learning New Complex Topics (Feynman Technique),Personal Development & Life Skills
+Speed Reading with High Comprehension,Personal Development & Life Skills
+Time Management (Time Blocking & Pomodoro Technique),Personal Development & Life Skills
+529 College Savings Plan Strategy,Personal Finance & Financial Planning
+Asset Allocation & Modern Portfolio Theory,Personal Finance & Financial Planning
+Automated Savings & Investment Ladders,Personal Finance & Financial Planning
+Backdoor Roth IRA Conversion Steps,Personal Finance & Financial Planning
+Credit Score Optimization & Dispute Letters,Personal Finance & Financial Planning
+Disability Insurance Policies & Riders,Personal Finance & Financial Planning
+Emergency Fund Sizing & High-Yield Savings,Personal Finance & Financial Planning
+Flexible Spending Account (FSA) Rules,Personal Finance & Financial Planning
+Health Savings Account (HSA) Triple Tax Advantage,Personal Finance & Financial Planning
+Long-Term Care Insurance Sizing,Personal Finance & Financial Planning
+Mega Backdoor Roth 401(k) Execution,Personal Finance & Financial Planning
+Mortgage Pre-Approval & Amortization Calculations,Personal Finance & Financial Planning
+Rebalancing Investment Portfolios,Personal Finance & Financial Planning
+Refinancing Strategy & Break-Even Analysis,Personal Finance & Financial Planning
+Student Loan Payoff Strategies,Personal Finance & Financial Planning
+Target Date Funds vs Three-Fund Portfolio,Personal Finance & Financial Planning
+Tax-Loss Harvesting Strategies,Personal Finance & Financial Planning
+Term Life Insurance vs Whole Life Analysis,Personal Finance & Financial Planning
+Umbrella Liability Insurance Coverage,Personal Finance & Financial Planning
+Zero-Based Budgeting (YNAB Method),Personal Finance & Financial Planning
+Canine First Aid & CPR Protocols,"Pet Care, Animal Behavior & Training"
+Canine Good Citizen (CGC) Prep,"Pet Care, Animal Behavior & Training"
+Cat Behavior & Litter Box Problem Solving,"Pet Care, Animal Behavior & Training"
+Cat Clicker Training & Enrichment,"Pet Care, Animal Behavior & Training"
+Clicker Training & Positive Reinforcement,"Pet Care, Animal Behavior & Training"
+Dog Agility Course Obstacle Training,"Pet Care, Animal Behavior & Training"
+Dog Separation Anxiety Desensitization,"Pet Care, Animal Behavior & Training"
+Equine Horsemanship & Ground Work,"Pet Care, Animal Behavior & Training"
+Freshwater Aquarium Aquascaping,"Pet Care, Animal Behavior & Training"
+"Horse Grooming, Tacking & Hoof Care","Pet Care, Animal Behavior & Training"
+Loose Leash Walking & Heel Command,"Pet Care, Animal Behavior & Training"
+Parrot Behavior & Feather Plucking Interventions,"Pet Care, Animal Behavior & Training"
+Pet Nutrition & Raw Feeding Formulation,"Pet Care, Animal Behavior & Training"
+Professional Dog Grooming & Scissoring,"Pet Care, Animal Behavior & Training"
+Puppy Socialization & Potty Training,"Pet Care, Animal Behavior & Training"
+Reactivity & Aggression Modification,"Pet Care, Animal Behavior & Training"
+Recall Training (Reliable Come Command),"Pet Care, Animal Behavior & Training"
+Reptile Husbandry & Terrarium Climate Setup,"Pet Care, Animal Behavior & Training"
+Saltwater Reef Tank Maintenance & Water Parameters,"Pet Care, Animal Behavior & Training"
+Western & English Riding Fundamentals,"Pet Care, Animal Behavior & Training"
+3-Axis Gimbal Balance & Camera Movement Techniques,Photography & Videography Production
+Action Sports Photography & High Burst Shutter,Photography & Videography Production
+Adobe Lightroom Classic Catalog & RAW Processing,Photography & Videography Production
+Adobe Photoshop Frequency Separation for Portraits,Photography & Videography Production
+Astrophotography & Milky Way Capture,Photography & Videography Production
+Cinematic Composition & Rule of Thirds,Photography & Videography Production
+Client Photo Gallery Delivery (Pixieset / ShootProof),Photography & Videography Production
+Color Grading with DaVinci Resolve Color Wheels & LUTs,Photography & Videography Production
+Commercial Product Photography & Tabletop Sets,Photography & Videography Production
+"DSLR / Mirrorless Camera Manual Exposure Triangle (ISO, Aperture, Shutter)",Photography & Videography Production
+Documentary Film Production & B-Roll Storytelling,Photography & Videography Production
+Event & Concert Photography in Low Light,Photography & Videography Production
+FAA Part 107 Drone Piloting & Aerial Cinematography,Photography & Videography Production
+Fashion Photography & Editorial Direction,Photography & Videography Production
+Final Cut Pro X Video Editing Workflow,Photography & Videography Production
+Flash Photography & On-Camera Speedlights,Photography & Videography Production
+Food Photography & Food Styling Tricks,Photography & Videography Production
+Golden Hour & Natural Available Lighting,Photography & Videography Production
+Green Screen Chroma Keying & Clean Plates,Photography & Videography Production
+Instagram Reels & TikTok Short-Form Video Editing,Photography & Videography Production
+Landscape & Scenic Nature Photography,Photography & Videography Production
+Lightroom Presets Creation & Batch Editing,Photography & Videography Production
+Macro & Close-Up Photography,Photography & Videography Production
+Multi-Camera Syncing & Multicam Editing,Photography & Videography Production
+Off-Camera Flash (OCF) Radio Triggers,Photography & Videography Production
+Portrait Photography & Lighting Setup,Photography & Videography Production
+Prime vs Zoom Lens Selection & Optical Theory,Photography & Videography Production
+Real Estate & Architectural Photography (HDR / Flambient),Photography & Videography Production
+Slow-Motion 120fps Video Capture,Photography & Videography Production
+Stop Motion Animation Techniques,Photography & Videography Production
+Street Photography & Candid Moments,Photography & Videography Production
+"Studio Lighting (Key, Fill, Rim, Softboxes, Modifiers)",Photography & Videography Production
+Time-Lapse & Hyperlapse Shooting & Deflicker,Photography & Videography Production
+Underwater Photography Basics,Photography & Videography Production
+Video Compression & Bitrate Encoding for Web,Photography & Videography Production
+Video Editing in Adobe Premiere Pro,Photography & Videography Production
+Video Editing in DaVinci Resolve,Photography & Videography Production
+Wedding Photography Shot List & Pacing,Photography & Videography Production
+Wireless Lav & Shotgun Mic Audio Recording for Video,Photography & Videography Production
+YouTube Video Production & Hook Crafting,Photography & Videography Production
+Assembly Language,Programming & Languages
+Bash Scripting,Programming & Languages
+C Language,Programming & Languages
+C#,Programming & Languages
+C++,Programming & Languages
+COBOL,Programming & Languages
+Clojure,Programming & Languages
+D Language,Programming & Languages
+Dart,Programming & Languages
+Elixir,Programming & Languages
+Erlang,Programming & Languages
+F#,Programming & Languages
+Fortran,Programming & Languages
+Go (Golang),Programming & Languages
+Groovy,Programming & Languages
+Haskell,Programming & Languages
+Java,Programming & Languages
+JavaScript,Programming & Languages
+Julia,Programming & Languages
+Kotlin,Programming & Languages
+Lua,Programming & Languages
+MATLAB,Programming & Languages
+Nim,Programming & Languages
+OCaml,Programming & Languages
+PHP,Programming & Languages
+Perl,Programming & Languages
+PowerShell,Programming & Languages
+Python,Programming & Languages
+R Programming,Programming & Languages
+Racket,Programming & Languages
+Ruby,Programming & Languages
+Rust,Programming & Languages
+Scala,Programming & Languages
+Scheme,Programming & Languages
+Solidity,Programming & Languages
+Swift,Programming & Languages
+TypeScript,Programming & Languages
+Vimscript,Programming & Languages
+Zig,Programming & Languages
+Zsh,Programming & Languages
+API Testing with Postman & Newman,Software Testing & Quality Assurance
+Accessibility Testing with axe-core,Software Testing & Quality Assurance
+Apache JMeter Load Testing,Software Testing & Quality Assurance
+Automated Testing with Selenium WebDriver,Software Testing & Quality Assurance
+Behavior-Driven Development (Cucumber / Gherkin),Software Testing & Quality Assurance
+Contract Testing with Pact,Software Testing & Quality Assurance
+Cross-Browser Grid Testing (BrowserStack),Software Testing & Quality Assurance
+Cypress End-to-End Testing,Software Testing & Quality Assurance
+Flutter Integration Tests (Patrol),Software Testing & Quality Assurance
+Flutter Unit & Widget Testing,Software Testing & Quality Assurance
+Gatling Scala Load Testing,Software Testing & Quality Assurance
+Go Testing Package & Testify,Software Testing & Quality Assurance
+JUnit 5 & Mockito for Java,Software Testing & Quality Assurance
+Mutation Testing (Stryker / Mutmut),Software Testing & Quality Assurance
+Performance & Load Testing with k6,Software Testing & Quality Assurance
+Playwright Browser Automation,Software Testing & Quality Assurance
+Python pytest Framework,Software Testing & Quality Assurance
+RestAssured API Automation,Software Testing & Quality Assurance
+Test-Driven Development (TDD Patterns),Software Testing & Quality Assurance
+Unit Testing with Jest,Software Testing & Quality Assurance
+Backflow Prevention Device Testing,Trades & Advanced Fabrication
+Bridgeport Manual Milling Machine Operation,Trades & Advanced Fabrication
+Cast Iron Welding & Preheating Protocols,Trades & Advanced Fabrication
+"Concrete Slab Pouring, Screeding & Trowel Finishing",Trades & Advanced Fabrication
+Hydraulic Hose Crimping & Fitting Assembly,Trades & Advanced Fabrication
+MIG Welding (GMAW) Steel & Aluminum,Trades & Advanced Fabrication
+Metal Lathe Turning & Thread Cutting,Trades & Advanced Fabrication
+"Metal Surface Finishing (Bead Blasting, Anodizing)",Trades & Advanced Fabrication
+Oxy-Acetylene Torch Cutting & Brazing,Trades & Advanced Fabrication
+Plasma Torch Metal Cutting & Piercing,Trades & Advanced Fabrication
+Pneumatic System Piping & Valve Regulators,Trades & Advanced Fabrication
+Powder Coating Equipment & Oven Curing,Trades & Advanced Fabrication
+"Rigging Heavy Machinery (Gantry Cranes, Slings)",Trades & Advanced Fabrication
+Septic System Maintenance & Leach Fields,Trades & Advanced Fabrication
+Sheet Metal Brake Bending & Flanging,Trades & Advanced Fabrication
+Stick Welding (SMAW) Structural Joints,Trades & Advanced Fabrication
+Structural Steel Bolt Torquing & Inspection,Trades & Advanced Fabrication
+TIG Welding (GTAW) Stainless Steel & Thin Sheet,Trades & Advanced Fabrication
+Underground Utility Locating Basics,Trades & Advanced Fabrication
+Well Pump & Pressure Tank Troubleshooting,Trades & Advanced Fabrication
+Automotive Oil Change & Fluid Level Inspection,"Trades, Automotive, Home Repair & Gardening"
+Basic Framing & Stud Wall Construction,"Trades, Automotive, Home Repair & Gardening"
+Bicycle Derailleur Adjustment & Gear Indexing,"Trades, Automotive, Home Repair & Gardening"
+Bicycle Hydraulic Disc Brake Bleeding & Trueing Wheels,"Trades, Automotive, Home Repair & Gardening"
+Brake Pad and Rotor Replacement,"Trades, Automotive, Home Repair & Gardening"
+Car Battery Replacement & Alternator Testing,"Trades, Automotive, Home Repair & Gardening"
+"Ceramic, Porcelain & Subways Tile Laying","Trades, Automotive, Home Repair & Gardening"
+Clearing Clogged Drains & P-Trap Replacement,"Trades, Automotive, Home Repair & Gardening"
+Drip Irrigation System Sizing & Installation,"Trades, Automotive, Home Repair & Gardening"
+"Drywall Hanging, Taping, Mudding & Texture Matching","Trades, Automotive, Home Repair & Gardening"
+Exterior House Painting & Power Washing Prep,"Trades, Automotive, Home Repair & Gardening"
+"Fruit Tree Pruning, Thinning & Grafting","Trades, Automotive, Home Repair & Gardening"
+"Hardscaping (Paver Patios, Retaining Walls, Walkways)","Trades, Automotive, Home Repair & Gardening"
+Home HVAC Air Filter & Smart Thermostat Installation,"Trades, Automotive, Home Repair & Gardening"
+"Home Plumbing Repair (Fixing Leaks, Traps, Faucets)","Trades, Automotive, Home Repair & Gardening"
+Hydroponic & Aeroponic Vegetable Cultivation,"Trades, Automotive, Home Repair & Gardening"
+"Installing Light Fixtures, Switches & GFCI Outlets","Trades, Automotive, Home Repair & Gardening"
+Interior Wall Painting & Edging Techniques,"Trades, Automotive, Home Repair & Gardening"
+"Laminate, Vinyl Plank & Hardwood Flooring Installation","Trades, Automotive, Home Repair & Gardening"
+Landscape Design & Flower Bed Layouts,"Trades, Automotive, Home Repair & Gardening"
+"Lawn Aeration, Overseeding & Weed Control","Trades, Automotive, Home Repair & Gardening"
+Locksmithing Basics & Rekeying Door Locks,"Trades, Automotive, Home Repair & Gardening"
+Motorcycle Chain Maintenance & Oil Change,"Trades, Automotive, Home Repair & Gardening"
+OBD-II Diagnostic Trouble Code Scanning,"Trades, Automotive, Home Repair & Gardening"
+Raised Bed Organic Vegetable Gardening,"Trades, Automotive, Home Repair & Gardening"
+Residential Electrical Wiring & Circuit Breakers,"Trades, Automotive, Home Repair & Gardening"
+"Small Engine Repair (Lawnmowers, Chainsaws, Weed Eaters)","Trades, Automotive, Home Repair & Gardening"
+"Soil Science, pH Testing & Organic Composting","Trades, Automotive, Home Repair & Gardening"
+Solar PV Panel Installation Basics,"Trades, Automotive, Home Repair & Gardening"
+Spark Plug & Ignition Coil Replacement,"Trades, Automotive, Home Repair & Gardening"
+Accessibility Design (WCAG 2.1 AA),UI/UX Design & User Research
+Adobe XD Prototyping,UI/UX Design & User Research
+Affinity Diagramming,UI/UX Design & User Research
+Atomic Design Methodology,UI/UX Design & User Research
+Card Sorting & Treejack Testing,UI/UX Design & User Research
+Color Theory & Contrast in UI,UI/UX Design & User Research
+Competitive UX Benchmarking,UI/UX Design & User Research
+Customer Empathy Mapping,UI/UX Design & User Research
+Design Handoff Documentation,UI/UX Design & User Research
+Design Thinking Workshop Facilitation,UI/UX Design & User Research
+Figma Auto Layout 5.0,UI/UX Design & User Research
+Figma Component Libraries & Design Systems,UI/UX Design & User Research
+Figma Interactive Prototyping,UI/UX Design & User Research
+Figma UI Design Mastery,UI/UX Design & User Research
+Figma Variables & Tokens,UI/UX Design & User Research
+Google Material Design 3,UI/UX Design & User Research
+InVision Workflows,UI/UX Design & User Research
+Information Architecture & Sitemaps,UI/UX Design & User Research
+Micro-Interactions Design,UI/UX Design & User Research
+Sketch App for Mac,UI/UX Design & User Research
+Typography Hierarchy in UI,UI/UX Design & User Research
+UX Writing & Content Design,UI/UX Design & User Research
+Usability Testing & Heuristic Evaluation,UI/UX Design & User Research
+User Experience (UX) Architecture,UI/UX Design & User Research
+User Interface (UI) Visual Hierarchy,UI/UX Design & User Research
+User Journey & Experience Mapping,UI/UX Design & User Research
+User Persona Development,UI/UX Design & User Research
+User Research & Interviews,UI/UX Design & User Research
+Wireframing (Low & High Fidelity),UI/UX Design & User Research
+iOS Human Interface Guidelines (HIG),UI/UX Design & User Research
+Angular,Web & Frontend Development
+Ant Design,Web & Frontend Development
+Astro,Web & Frontend Development
+Babel,Web & Frontend Development
+Bootstrap 5,Web & Frontend Development
+CSS3,Web & Frontend Development
+Chakra UI,Web & Frontend Development
+Chart.js,Web & Frontend Development
+Core Web Vitals Optimization,Web & Frontend Development
+Cross-Browser Testing,Web & Frontend Development
+Custom Web Components,Web & Frontend Development
+D3.js,Web & Frontend Development
+Framer Motion,Web & Frontend Development
+Frontend i18n,Web & Frontend Development
+GSAP Animation,Web & Frontend Development
+Gatsby,Web & Frontend Development
+HTML5,Web & Frontend Development
+HTML5 Canvas,Web & Frontend Development
+Jotai,Web & Frontend Development
+Material-UI (MUI),Web & Frontend Development
+Micro-Frontends,Web & Frontend Development
+MobX,Web & Frontend Development
+Next.js,Web & Frontend Development
+Nuxt.js,Web & Frontend Development
+Pinia,Web & Frontend Development
+PostCSS,Web & Frontend Development
+Progressive Web Apps (PWA),Web & Frontend Development
+React,Web & Frontend Development
+Recoil,Web & Frontend Development
+Redux Toolkit,Web & Frontend Development
+Remix,Web & Frontend Development
+Responsive Web Design,Web & Frontend Development
+Rollup.js,Web & Frontend Development
+Sass / SCSS,Web & Frontend Development
+Server-Sent Events,Web & Frontend Development
+Shadcn UI,Web & Frontend Development
+Storybook,Web & Frontend Development
+Svelte,Web & Frontend Development
+SvelteKit,Web & Frontend Development
+Tailwind CSS,Web & Frontend Development
+Three.js,Web & Frontend Development
+Turbopack,Web & Frontend Development
+Vite,Web & Frontend Development
+Vue.js,Web & Frontend Development
+WebAssembly (WASM),Web & Frontend Development
+WebGL,Web & Frontend Development
+WebSockets Client,Web & Frontend Development
+Webpack,Web & Frontend Development
+Zustand,Web & Frontend Development
+jQuery,Web & Frontend Development
+Bandsaw Resawing & Veneer Slicing,Woodworking & Cabinetry Specializations
+Baseboard & Window Trim Carpentry,Woodworking & Cabinetry Specializations
+Biscuit Joiner Alignment for Table Tops,Woodworking & Cabinetry Specializations
+Crown Molding Miter & Coping Cuts,Woodworking & Cabinetry Specializations
+Epoxy Infill for Knots & Voids,Woodworking & Cabinetry Specializations
+Inlay Work (Wood Marquetry & Parquetry),Woodworking & Cabinetry Specializations
+Kitchen Cabinet Building (Face Frame vs Euro Style),Woodworking & Cabinetry Specializations
+Pocket Hole Joinery Strength & Assembly,Woodworking & Cabinetry Specializations
+Raised Panel Door Routing,Woodworking & Cabinetry Specializations
+Router Table Joinery & Bit Selection,Woodworking & Cabinetry Specializations
+Scroll Saw Intarsia Art,Woodworking & Cabinetry Specializations
+Shed & Pergola Framing Construction,Woodworking & Cabinetry Specializations
+Shou Sugi Ban (Japanese Charred Wood),Woodworking & Cabinetry Specializations
+Soft-Close Drawer Slide Installation & Alignment,Woodworking & Cabinetry Specializations
+Timber Framing & Heavy Timber Mortises,Woodworking & Cabinetry Specializations
+Track Saw Straight-Line Ripping,Woodworking & Cabinetry Specializations
+Wood Bending (Steam Bending / Bent Lamination),Woodworking & Cabinetry Specializations
+Wood Carving Relief & Deep Carving,Woodworking & Cabinetry Specializations
+Wood Lathe Bowl Turning,Woodworking & Cabinetry Specializations
+Wood Lathe Spindle Turning (Chair Legs),Woodworking & Cabinetry Specializations
+Academic Essay Structuring & Citations,"Writing, Literature & Communication"
+Blogging & High-Traffic Content Writing,"Writing, Literature & Communication"
+Character Arc Design & Internal Conflict,"Writing, Literature & Communication"
+Children's Picture Book Writing,"Writing, Literature & Communication"
+Copyediting & Proofreading (Chicago Manual of Style),"Writing, Literature & Communication"
+Creative Fiction Writing & Narrative Arcs,"Writing, Literature & Communication"
+Crisis Communication Messaging,"Writing, Literature & Communication"
+Developer API Documentation & Markdown,"Writing, Literature & Communication"
+Executive Speechwriting & Persuasive Oratory,"Writing, Literature & Communication"
+Feature Article & Magazine Writing,"Writing, Literature & Communication"
+Food & Restaurant Review Writing,"Writing, Literature & Communication"
+Ghostwriting Thought Leadership Articles,"Writing, Literature & Communication"
+Grant Writing for Non-Profits,"Writing, Literature & Communication"
+Investigative Reporting & Fact-Checking,"Writing, Literature & Communication"
+Journalistic Research & Interview Techniques,"Writing, Literature & Communication"
+Memoir & Personal Narrative Writing,"Writing, Literature & Communication"
+Newsletter Curation & Writing (Substack),"Writing, Literature & Communication"
+Non-Fiction Book Outlining & Proposals,"Writing, Literature & Communication"
+Playwriting & Stage Dialogue,"Writing, Literature & Communication"
+Podcast Show Notes & Episode Scriptwriting,"Writing, Literature & Communication"
+"Poetry Writing (Haiku, Sonnet, Free Verse)","Writing, Literature & Communication"
+Public Relations (PR) Press Releases,"Writing, Literature & Communication"
+Screenwriting Structure (Three-Act & Save the Cat),"Writing, Literature & Communication"
+Technical Writing & Software User Guides,"Writing, Literature & Communication"
+Translation & Localization from Foreign Languages,"Writing, Literature & Communication"
+Travel Writing & Destination Guides,"Writing, Literature & Communication"
+Video Game Narrative Design & Branching Scripts,"Writing, Literature & Communication"
+Worldbuilding for Fantasy & Sci-Fi Novels,"Writing, Literature & Communication"
+Writing Compelling Dialogue for Fiction,"Writing, Literature & Communication"
+Writing Television Pilot Scripts,"Writing, Literature & Communication"

@@ -1,0 +1,76 @@
+# Environment & Secrets
+.env
+*.env
+!.env.example
+*.pem
+*.key
+*.cer
+*.crt
+*.pfx
+*.p12
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+*.sqlite
+*.sqlite3
+*.db
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+.coverage.*
+
+# Backend Uploads (track folder with .gitkeep only)
+backend/uploads/avatars/*
+!backend/uploads/avatars/.gitkeep
+
+# Flutter / Dart / Web
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+
+# Symbols & Obfuscation
+app.*.symbols
+app.*.map.json
+
+# Android build artifacts
+/android/app/debug
+/android/app/profile
+/android/app/release
+android/.gradle
+android/local.properties
+android/captures
+android/*.iml
+
+# IDE & Editors
+*.iml
+*.ipr
+*.iws
+.idea/
+.vscode/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
