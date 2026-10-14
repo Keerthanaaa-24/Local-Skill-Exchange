@@ -1,0 +1,36 @@
+# Local virtual environments
+venv/
+.venv/
+ENV/
+env/
+
+# Python cache & compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environment and secrets
+.env
+*.env
+*.pem
+*.key
+
+# Local SQLite databases
+*.db
+*.sqlite
+*.sqlite3
+sql_app.db
+
+# User uploads & ephemeral data
+uploads/avatars/*
+!uploads/avatars/.gitkeep
+
+# Git and IDE metadata
+.git/
+.gitignore
+.idea/
+.vscode/
