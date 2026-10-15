@@ -19,7 +19,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Layer caching: copy requirements first
 COPY requirements.txt /app/requirements.txt
 RUN pip install --no-cache-dir --upgrade pip && \
-    pip install --no-cache-dir -r requirements.txt
+    pip install --no-cache-dir -r /app/requirements.txt
+
+# Build-time verification: ensure critical dependencies are installed and importable
+RUN python -c "import email_validator; print('email-validator installed:', email_validator.__version__)"
 
 # Copy application source code and seeding datasets
 COPY app/ /app/app/
