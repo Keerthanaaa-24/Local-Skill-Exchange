@@ -24,13 +24,52 @@ def _resolve_database_url() -> str:
         raw_url = raw_url.replace("mysql://", "mysql+pymysql://", 1)
     return raw_url
 
+KNOWN_INSECURE_KEYS = {
+    "super-secret-key-change-in-production",
+    "secret",
+    "secretkey",
+    "changeme",
+    "admin",
+    "password",
+    "development",
+    "test",
+    "12345678",
+    "1234567890",
+}
+
+def _resolve_secret_key() -> str:
+    env = os.getenv("ENVIRONMENT", "development").strip().lower()
+    raw_key = os.getenv("SECRET_KEY", "").strip()
+    if not raw_key:
+        if env == "production":
+            raise RuntimeError(
+                "CRITICAL SECURITY CONFIGURATION ERROR: SECRET_KEY environment variable "
+                "must be explicitly set when ENVIRONMENT is 'production'."
+            )
+        return "super-secret-key-change-in-production"
+
+    if env == "production":
+        lower_key = raw_key.lower()
+        if lower_key in KNOWN_INSECURE_KEYS or "change-in-production" in lower_key:
+            raise RuntimeError(
+                "CRITICAL SECURITY CONFIGURATION ERROR: The provided SECRET_KEY is a known "
+                "insecure default and cannot be used in production. "
+                "Generate a cryptographically secure key (e.g. openssl rand -hex 32)."
+            )
+        if len(raw_key) < 32:
+            raise RuntimeError(
+                "CRITICAL SECURITY CONFIGURATION ERROR: SECRET_KEY is too weak for production. "
+                f"Minimum required length is 32 characters (current: {len(raw_key)} characters)."
+            )
+    return raw_key
+
 class Settings(BaseSettings):
     PROJECT_NAME: str = "Local Skill Exchange API"
     VERSION: str = "1.0.0"
     API_V1_STR: str = "/api/v1"
     ENVIRONMENT: str = os.getenv("ENVIRONMENT", "development")
     
-    SECRET_KEY: str = os.getenv("SECRET_KEY", "super-secret-key-change-in-production")
+    SECRET_KEY: str = _resolve_secret_key()
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 60 * 24 * 7 # 7 days
     
     # Database

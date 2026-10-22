@@ -248,6 +248,67 @@ flutter run -d chrome
 
 ---
 
+## 🌐 Production Readiness & Cloud Deployment
+
+### 1. Standalone Cloud Deployment (Zero Laptop Dependency)
+The backend and MySQL database can be deployed autonomously to the cloud using the included blueprints:
+
+- **Railway (Recommended 1-Click):**
+  - Uses `railway.json` and `backend/Dockerfile`.
+  - Connect your GitHub repo to Railway, provision a MySQL service and a Web service from Dockerfile.
+  - Set `INIT_SEEDS=true` and `ENVIRONMENT=production`.
+  - Railway provides automatic HTTPS: `https://your-app.up.railway.app`.
+
+- **Render:**
+  - Uses `render.yaml` infrastructure blueprint.
+  - Creates the web service and managed MySQL database with auto-generated SSL and health probes (`/health`).
+
+- **Self-Hosted Docker Compose:**
+  - Run on any VPS (AWS EC2, DigitalOcean, Linode):
+  ```bash
+  docker compose -f docker-compose.prod.yml up -d --build
+  ```
+
+### 2. Runtime Mobile API Endpoint Configuration
+Mobile users can connect to any deployed cloud backend without re-compiling the APK:
+1. Tap the **Server URL** settings button on the Login / Splash screen.
+2. Enter your production HTTPS URL (e.g., `https://your-app.up.railway.app/api/v1`).
+3. The app validates the connection and saves it securely to encrypted device storage.
+
+### 3. Production Security & Concurrency Protections
+- **Wallet Concurrency (Double-Spending Prevention):** Atomic database credit decrements with credit floor checks (`WHERE credits >= cost`) ensure concurrent requests never result in negative balances.
+- **Strict SECRET_KEY Enforcement:** When `ENVIRONMENT=production`, the server strictly rejects default or missing JWT signing keys.
+- **Upload Validation:** Avatar uploads enforce a 5 MB ceiling and strict magic-byte file signature validation (JPEG, PNG, WebP, GIF), blocking arbitrary binaries.
+- **Database Performance:** 27 foreign keys, timestamps, and filter columns are indexed across all tables to eliminate full table scans.
+
+### 4. Database Backups & Index Migrations
+- **Backup Snapshot Utility:**
+  ```bash
+  python backend/scripts/backup_db.py
+  ```
+  Generates timestamped SQL dump archives in `backend/backups/`.
+- **Performance Index Migration:**
+  ```bash
+  python backend/scripts/apply_indexes.py
+  ```
+
+### 5. Automated Regression Test Suites
+```bash
+# Test backend authentication flows (Register, Form/JSON Login, Guest, Google OAuth)
+python backend/scripts/test_auth_flows.py
+
+# Test critical production fixes (Wallet concurrency, upload security, secret enforcement)
+python backend/scripts/test_critical_fixes.py
+
+# Run Flutter automated test suite
+flutter test
+
+# Run Flutter static code analysis
+flutter analyze
+```
+
+---
+
 ## 📚 API Documentation Reference
 
 FastAPI automatically generates interactive API documentation:

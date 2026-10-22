@@ -1,0 +1,53 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:8.0
+    container_name: lse_production_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-ChangeMeSecurelyRootPass123!}
+      MYSQL_DATABASE: local_skill_exchange
+      MYSQL_USER: ${MYSQL_USER:-skill_user}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:-ChangeMeSecurelyUserPass123!}
+    ports:
+      - "127.0.0.1:3306:3306"
+    volumes:
+      - mysql_prod_data:/var/lib/mysql
+    command: --default-authentication-plugin=mysql_native_password --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-p${MYSQL_ROOT_PASSWORD:-ChangeMeSecurelyRootPass123!}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  api:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: lse_production_api
+    restart: always
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      ENVIRONMENT: production
+      PORT: 8000
+      SECRET_KEY: ${SECRET_KEY:?SECRET_KEY must be set in environment}
+      DATABASE_URL: mysql+pymysql://${MYSQL_USER:-skill_user}:${MYSQL_PASSWORD:-ChangeMeSecurelyUserPass123!}@db:3306/local_skill_exchange?charset=utf8mb4
+      CORS_ORIGINS: ${CORS_ORIGINS:-*}
+      GOOGLE_CLIENT_ID: ${GOOGLE_CLIENT_ID:-}
+      INIT_SEEDS: "true"
+    ports:
+      - "8000:8000"
+    volumes:
+      - api_uploads:/app/uploads
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://127.0.0.1:8000/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+volumes:
+  mysql_prod_data:
+  api_uploads:

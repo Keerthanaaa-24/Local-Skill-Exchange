@@ -8,6 +8,11 @@
 *.crt
 *.pfx
 *.p12
+*.jks
+*.keystore
+key.properties
+android/key.properties
+backend/backups/
 
 # Python
 __pycache__/
@@ -50,6 +55,7 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+android/build/
 android/.gradle
 android/local.properties
 android/captures

@@ -39,8 +39,8 @@ class UserSkillOffered(Base):
     __tablename__ = "user_skills_offered"
 
     id = Column(Integer, primary_key=True, index=True)
-    user_id = Column(Integer, ForeignKey("users.id"))
-    skill_id = Column(Integer, ForeignKey("skills.id"))
+    user_id = Column(Integer, ForeignKey("users.id"), index=True)
+    skill_id = Column(Integer, ForeignKey("skills.id"), index=True)
 
     user = relationship("User", back_populates="skills_offered")
     skill = relationship("Skill")
@@ -49,8 +49,8 @@ class UserSkillWanted(Base):
     __tablename__ = "user_skills_wanted"
 
     id = Column(Integer, primary_key=True, index=True)
-    user_id = Column(Integer, ForeignKey("users.id"))
-    skill_id = Column(Integer, ForeignKey("skills.id"))
+    user_id = Column(Integer, ForeignKey("users.id"), index=True)
+    skill_id = Column(Integer, ForeignKey("skills.id"), index=True)
 
     user = relationship("User", back_populates="skills_wanted")
     skill = relationship("Skill")
@@ -59,7 +59,7 @@ class UserBadge(Base):
     __tablename__ = "user_badges"
 
     id = Column(Integer, primary_key=True, index=True)
-    user_id = Column(Integer, ForeignKey("users.id"))
+    user_id = Column(Integer, ForeignKey("users.id"), index=True)
     badge_name = Column(String(100))
 
     user = relationship("User", back_populates="badges")
@@ -68,11 +68,11 @@ class Booking(Base):
     __tablename__ = "bookings"
 
     id = Column(Integer, primary_key=True, index=True)
-    mentee_id = Column(Integer, ForeignKey("users.id"))
-    mentor_id = Column(Integer, ForeignKey("users.id"))
-    skill_id = Column(Integer, ForeignKey("skills.id"))
-    date = Column(DateTime)
-    status = Column(String(50), default="upcoming") # upcoming, completed, canceled
+    mentee_id = Column(Integer, ForeignKey("users.id"), index=True)
+    mentor_id = Column(Integer, ForeignKey("users.id"), index=True)
+    skill_id = Column(Integer, ForeignKey("skills.id"), index=True)
+    date = Column(DateTime, index=True)
+    status = Column(String(50), default="upcoming", index=True) # upcoming, completed, canceled
     location = Column(String(255))
     credits_cost = Column(Integer, default=10)
 
@@ -120,10 +120,10 @@ class Transaction(Base):
     __tablename__ = "transactions"
 
     id = Column(Integer, primary_key=True, index=True)
-    user_id = Column(Integer, ForeignKey("users.id"))
+    user_id = Column(Integer, ForeignKey("users.id"), index=True)
     amount = Column(Integer) # positive for gain, negative for spent
     description = Column(String(255))
-    created_at = Column(DateTime, default=lambda: datetime.now(timezone.utc))
+    created_at = Column(DateTime, default=lambda: datetime.now(timezone.utc), index=True)
 
     user = relationship("User")
 
@@ -131,11 +131,11 @@ class Message(Base):
     __tablename__ = "messages"
 
     id = Column(Integer, primary_key=True, index=True)
-    sender_id = Column(Integer, ForeignKey("users.id"))
-    receiver_id = Column(Integer, ForeignKey("users.id"))
+    sender_id = Column(Integer, ForeignKey("users.id"), index=True)
+    receiver_id = Column(Integer, ForeignKey("users.id"), index=True)
     content = Column(String(1000))
-    timestamp = Column(DateTime, default=lambda: datetime.now(timezone.utc))
-    is_read = Column(Boolean, default=False)
+    timestamp = Column(DateTime, default=lambda: datetime.now(timezone.utc), index=True)
+    is_read = Column(Boolean, default=False, index=True)
 
     sender = relationship("User", foreign_keys=[sender_id])
     receiver = relationship("User", foreign_keys=[receiver_id])
@@ -144,12 +144,12 @@ class Review(Base):
     __tablename__ = "reviews"
 
     id = Column(Integer, primary_key=True, index=True)
-    reviewer_id = Column(Integer, ForeignKey("users.id"))
-    reviewee_id = Column(Integer, ForeignKey("users.id"))
-    booking_id = Column(Integer, ForeignKey("bookings.id"))
+    reviewer_id = Column(Integer, ForeignKey("users.id"), index=True)
+    reviewee_id = Column(Integer, ForeignKey("users.id"), index=True)
+    booking_id = Column(Integer, ForeignKey("bookings.id"), index=True)
     rating = Column(Float)
     comment = Column(String(500))
-    created_at = Column(DateTime, default=lambda: datetime.now(timezone.utc))
+    created_at = Column(DateTime, default=lambda: datetime.now(timezone.utc), index=True)
 
     reviewer = relationship("User", foreign_keys=[reviewer_id])
     reviewee = relationship("User", foreign_keys=[reviewee_id])
@@ -159,7 +159,7 @@ class LearningPath(Base):
     __tablename__ = "learning_paths"
 
     id = Column(Integer, primary_key=True, index=True)
-    skill_id = Column(Integer, ForeignKey("skills.id"), nullable=False)
+    skill_id = Column(Integer, ForeignKey("skills.id"), nullable=False, index=True)
     title = Column(String(255), nullable=False)
     description = Column(Text, nullable=True)
     # optional estimated total minutes
@@ -172,7 +172,7 @@ class Lesson(Base):
     __tablename__ = "lessons"
 
     id = Column(Integer, primary_key=True, index=True)
-    learning_path_id = Column(Integer, ForeignKey("learning_paths.id"), nullable=False)
+    learning_path_id = Column(Integer, ForeignKey("learning_paths.id"), nullable=False, index=True)
     title = Column(String(255), nullable=False)
     content = Column(Text, nullable=True)  # plain text or markdown
     summary = Column(Text, nullable=True)
@@ -294,13 +294,13 @@ class Notification(Base):
     __tablename__ = "notifications"
 
     id = Column(Integer, primary_key=True, index=True)
-    user_id = Column(Integer, ForeignKey("users.id"), nullable=False)
+    user_id = Column(Integer, ForeignKey("users.id"), nullable=False, index=True)
     title = Column(String(255), nullable=False)
     message = Column(Text, nullable=True)
     type = Column(String(50), default="general", nullable=True)
     target_id = Column(Integer, nullable=True)
-    is_read = Column(Boolean, default=False)
-    created_at = Column(DateTime, default=lambda: datetime.now(timezone.utc))
+    is_read = Column(Boolean, default=False, index=True)
+    created_at = Column(DateTime, default=lambda: datetime.now(timezone.utc), index=True)
 
     user = relationship("User")
 
@@ -308,8 +308,8 @@ class UserLearningProgress(Base):
     __tablename__ = "user_learning_progress"
 
     id = Column(Integer, primary_key=True, index=True)
-    user_id = Column(Integer, ForeignKey("users.id"), nullable=False)
-    learning_path_id = Column(Integer, ForeignKey("learning_paths.id"), nullable=False)
+    user_id = Column(Integer, ForeignKey("users.id"), nullable=False, index=True)
+    learning_path_id = Column(Integer, ForeignKey("learning_paths.id"), nullable=False, index=True)
     started_at = Column(DateTime, default=lambda: datetime.now(timezone.utc))
     completed_at = Column(DateTime, nullable=True)
     completed_lessons = Column(String(255), default="")

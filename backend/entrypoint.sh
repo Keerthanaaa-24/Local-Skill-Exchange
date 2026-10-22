@@ -5,6 +5,10 @@ set -e
 # Container Entrypoint for Local Skill Exchange Backend
 # ==============================================================================
 
+# Ensure all database schema indexes are applied
+echo "[Entrypoint] Verifying database schema and performance indexes..."
+python scripts/apply_indexes.py || echo "[Entrypoint] Warning: apply_indexes.py encountered a non-fatal warning"
+
 # Optional automated database seeding on fresh deployment (set INIT_SEEDS=true in Railway variables)
 if [ "$INIT_SEEDS" = "true" ] || [ "$INIT_SEEDS" = "1" ]; then
     echo "[Entrypoint] INIT_SEEDS is enabled. Seeding skills catalog and flagship learning paths..."

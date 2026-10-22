@@ -136,31 +136,78 @@ async def upload_user_image(
     db: SessionDep,
     current_user: CurrentUser,
 ):
+    if current_user.email == "guest_user@localskillexchange.internal":
+        raise HTTPException(status_code=403, detail="Guests cannot upload avatars. Please register or log in.")
+
+    # 1. Enforce 5 MB maximum before processing
+    MAX_AVATAR_BYTES = 5 * 1024 * 1024  # 5 MB ceiling
+    content_length = request.headers.get("content-length")
+    if content_length:
+        try:
+            if int(content_length) > MAX_AVATAR_BYTES:
+                raise HTTPException(status_code=413, detail="File too large. Maximum avatar size is 5 MB.")
+        except ValueError:
+            pass
+
+    form = await request.form()
+    file = form.get("file") or form.get("image")
+    if not file or not hasattr(file, "read"):
+        raise HTTPException(status_code=400, detail="No image file provided in request.")
+
+    # 2. Bounded stream read (read at most MAX_AVATAR_BYTES + 1 to prevent memory exhaustion)
+    content = await file.read(MAX_AVATAR_BYTES + 1)
+    if not content or len(content) == 0:
+        raise HTTPException(status_code=400, detail="Uploaded file is empty.")
+
+    if len(content) > MAX_AVATAR_BYTES:
+        raise HTTPException(status_code=413, detail="File too large. Maximum avatar size is 5 MB.")
+
+    # 3. Content-signature (magic bytes) validation
+    if content.startswith(b"\xff\xd8\xff"):
+        verified_ext = ".jpg"
+    elif content.startswith(b"\x89PNG\r\n\x1a\n"):
+        verified_ext = ".png"
+    elif len(content) >= 12 and content[0:4] == b"RIFF" and content[8:12] == b"WEBP":
+        verified_ext = ".webp"
+    elif content.startswith((b"GIF87a", b"GIF89a")):
+        verified_ext = ".gif"
+    else:
+        raise HTTPException(
+            status_code=400,
+            detail="Invalid image format. Supported formats are JPEG, PNG, WebP, and GIF.",
+        )
+
+    # 4. Deep structural image-decoding validation via Pillow
+    import io
     try:
-        form = await request.form()
-        file = form.get("file") or form.get("image")
-        if file and hasattr(file, "filename") and hasattr(file, "read"):
-            content = await file.read()
-            if content and len(content) > 0:
-                import os, time
-                upload_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))), "uploads", "avatars")
-                os.makedirs(upload_dir, exist_ok=True)
-                ext = os.path.splitext(file.filename)[1].lower()
-                if ext not in [".jpg", ".jpeg", ".png", ".webp", ".gif"]:
-                    ext = ".png"
-                filename = f"avatar_{current_user.id}_{int(time.time())}{ext}"
-                filepath = os.path.join(upload_dir, filename)
-                with open(filepath, "wb") as f:
-                    f.write(content)
-                avatar_url = f"/uploads/avatars/{filename}"
-                current_user.avatar_url = avatar_url
-                db.commit()
-                db.refresh(current_user)
-                return {"profile_image_url": avatar_url, "avatar_url": avatar_url}
-    except Exception as e:
-        print(f"Error uploading image: {e}")
-    
-    return {"profile_image_url": current_user.avatar_url, "avatar_url": current_user.avatar_url}
+        from PIL import Image
+        img = Image.open(io.BytesIO(content))
+        img.verify()
+        if img.format not in ("JPEG", "PNG", "WEBP", "GIF"):
+            raise HTTPException(status_code=400, detail="Image decoding failed: unsupported image format.")
+    except HTTPException:
+        raise
+    except Exception:
+        raise HTTPException(status_code=400, detail="Image decoding validation failed: corrupt image data.")
+
+    import os, uuid
+    upload_dir = os.path.join(
+        os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))),
+        "uploads",
+        "avatars",
+    )
+    os.makedirs(upload_dir, exist_ok=True)
+    filename = f"avatar_{current_user.id}_{uuid.uuid4().hex[:12]}{verified_ext}"
+    filepath = os.path.join(upload_dir, filename)
+
+    with open(filepath, "wb") as f:
+        f.write(content)
+
+    avatar_url = f"/uploads/avatars/{filename}"
+    current_user.avatar_url = avatar_url
+    db.commit()
+    db.refresh(current_user)
+    return {"profile_image_url": avatar_url, "avatar_url": avatar_url}
 
 @router.get("/nearby", response_model=List[UserResponse])
 def get_nearby_users(

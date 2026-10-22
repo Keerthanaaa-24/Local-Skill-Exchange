@@ -8,7 +8,7 @@ from ...core.config import settings
 from ...db.models import User
 from ...schemas.user import UserCreate, UserResponse
 from ...schemas.token import Token
-from ..deps import SessionDep
+from ..deps import SessionDep, CurrentUser
 
 router = APIRouter()
 
@@ -181,7 +181,21 @@ def guest_auth(db: SessionDep):
         db.add(user)
         db.commit()
         db.refresh(user)
+    elif not user.is_test_user:
+        user.is_test_user = True
+        db.commit()
+        db.refresh(user)
     
     access_token = security.create_access_token(user.id)
     return {"access_token": access_token, "token_type": "bearer", "is_guest": True}
+
+@router.post("/refresh", response_model=Token)
+def refresh_token(current_user: CurrentUser):
+    """
+    Refreshes the active JWT token for an authenticated user without requiring re-login.
+    """
+    new_token = security.create_access_token(current_user.id)
+    is_guest = current_user.email == "guest_user@localskillexchange.internal"
+    return {"access_token": new_token, "token_type": "bearer", "is_guest": is_guest}
+
 

@@ -32,9 +32,14 @@ class ApiClient {
         }
         return handler.next(options);
       },
-      onError: (DioException e, handler) {
-        // Detailed logging for mobile connectivity debugging
-        // (Does not expose sensitive credentials)
+      onError: (DioException e, handler) async {
+        if (e.response?.statusCode == 401) {
+          final path = e.requestOptions.path;
+          if (!path.contains('/auth/login') && !path.contains('/auth/register')) {
+            // Auto-clean expired token so the app does not loop on bad credentials
+            await TokenStorage.deleteToken();
+          }
+        }
         return handler.next(e);
       },
     ));
