@@ -17,6 +17,12 @@ final authStateProvider = StateNotifierProvider<AuthNotifier, User?>((ref) {
   return AuthNotifier(authRepository);
 });
 
+/// Convenience provider to easily check if current session is Guest Mode
+final isGuestUserProvider = Provider<bool>((ref) {
+  final user = ref.watch(authStateProvider);
+  return user?.isGuest ?? false;
+});
+
 class AuthNotifier extends StateNotifier<User?> {
   final AuthRepository _authRepository;
 
@@ -40,6 +46,28 @@ class AuthNotifier extends StateNotifier<User?> {
 
   Future<void> register(String name, String email, String password) async {
     final response = await _authRepository.register(name, email, password);
+    state = response.user;
+  }
+
+  Future<void> loginAsGuest() async {
+    final response = await _authRepository.loginAsGuest();
+    state = response.user;
+  }
+
+  Future<void> loginWithGoogle({
+    required String idToken,
+    String? accessToken,
+    String? email,
+    String? name,
+    String? avatarUrl,
+  }) async {
+    final response = await _authRepository.loginWithGoogle(
+      idToken: idToken,
+      accessToken: accessToken,
+      email: email,
+      name: name,
+      avatarUrl: avatarUrl,
+    );
     state = response.user;
   }
 

@@ -184,6 +184,18 @@ class _SimpleAuthNotifier extends StateNotifier<User?> implements AuthNotifier {
   Future<void> refreshUser() async {}
 
   @override
+  Future<void> loginAsGuest() async {}
+
+  @override
+  Future<void> loginWithGoogle({
+    required String idToken,
+    String? accessToken,
+    String? email,
+    String? name,
+    String? avatarUrl,
+  }) async {}
+
+  @override
   Future<void> logout() async {
     state = null;
   }

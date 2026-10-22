@@ -15,6 +15,7 @@ class User {
   final bool isOnline;
   final double? lat;
   final double? lng;
+  final bool isGuest;
 
   User({
     required this.id,
@@ -33,9 +34,13 @@ class User {
     required this.isOnline,
     this.lat,
     this.lng,
+    this.isGuest = false,
   });
 
-  factory User.fromJson(Map<String, dynamic> json) {
+  factory User.fromJson(Map<String, dynamic> json, {bool isGuest = false}) {
+    final guestFlag = isGuest ||
+        json['is_guest'] == true ||
+        (json['email']?.toString().toLowerCase().contains('guest_user@') ?? false);
     return User(
       id: json['id'].toString(),
       name: json['name'] ?? '',
@@ -57,6 +62,7 @@ class User {
       isOnline: json['is_online'] ?? false,
       lat: json['lat'] != null ? (json['lat'] as num).toDouble() : null,
       lng: json['lng'] != null ? (json['lng'] as num).toDouble() : null,
+      isGuest: guestFlag,
     );
   }
 }

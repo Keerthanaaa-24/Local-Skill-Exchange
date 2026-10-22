@@ -13,6 +13,7 @@ import '../../repositories/community_repository.dart';
 import '../../core/widgets/custom_avatar.dart';
 import '../conversation_screen.dart';
 import '../../routes/app_routes.dart';
+import '../../core/utils/guest_guard.dart';
 
 class MentorProfileScreen extends ConsumerStatefulWidget {
   final RecommendationModel recommendation;
@@ -31,6 +32,9 @@ class _MentorProfileScreenState extends ConsumerState<MentorProfileScreen> {
   bool _isBooking = false;
 
   void _showBookingSheet() {
+    if (!GuestGuard.check(context, ref, actionName: 'book a mentoring session')) {
+      return;
+    }
     showModalBottomSheet(
       context: context,
       isScrollControlled: true,
@@ -195,6 +199,9 @@ class _MentorProfileScreenState extends ConsumerState<MentorProfileScreen> {
   }
 
   void _openChat(BuildContext context) {
+    if (!GuestGuard.check(context, ref, actionName: 'chat with mentors')) {
+      return;
+    }
     Navigator.push(
       context,
       MaterialPageRoute(

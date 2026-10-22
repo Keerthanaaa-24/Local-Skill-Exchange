@@ -4,8 +4,14 @@ import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 class TokenStorage {
   static String? _inMemoryToken;
   static String? _inMemoryRefreshToken;
+  static bool? _inMemoryIsGuest;
+  static String? _inMemoryCustomApiUrl;
 
   static const _storage = FlutterSecureStorage(
+    aOptions: AndroidOptions(
+      encryptedSharedPreferences: true,
+      resetOnError: true,
+    ),
     webOptions: WebOptions(
       dbName: 'local_skill_exchange',
       publicKey: 'local_skill_exchange',
@@ -14,6 +20,8 @@ class TokenStorage {
   
   static const _tokenKey = 'access_token';
   static const _refreshTokenKey = 'jwt_refresh_token';
+  static const _isGuestKey = 'is_guest';
+  static const _customApiUrlKey = 'custom_api_base_url';
 
   static Future<void> saveToken(String token) async {
     _inMemoryToken = token;
@@ -83,6 +91,54 @@ class TokenStorage {
     }
   }
 
+  static Future<void> saveIsGuest(bool isGuest) async {
+    _inMemoryIsGuest = isGuest;
+    try {
+      await _storage.write(key: _isGuestKey, value: isGuest ? 'true' : 'false');
+    } catch (e) {
+      debugPrint('TokenStorage saveIsGuest error: $e');
+    }
+  }
+
+  static Future<bool> getIsGuest() async {
+    if (_inMemoryIsGuest != null) {
+      return _inMemoryIsGuest!;
+    }
+    try {
+      final val = await _storage.read(key: _isGuestKey);
+      _inMemoryIsGuest = val == 'true';
+      return _inMemoryIsGuest!;
+    } catch (e) {
+      debugPrint('TokenStorage getIsGuest error: $e');
+      return false;
+    }
+  }
+
+  static Future<void> saveCustomApiUrl(String url) async {
+    _inMemoryCustomApiUrl = url.trim();
+    try {
+      await _storage.write(key: _customApiUrlKey, value: _inMemoryCustomApiUrl);
+    } catch (e) {
+      debugPrint('TokenStorage saveCustomApiUrl error: $e');
+    }
+  }
+
+  static Future<String?> getCustomApiUrl() async {
+    if (_inMemoryCustomApiUrl != null && _inMemoryCustomApiUrl!.isNotEmpty) {
+      return _inMemoryCustomApiUrl;
+    }
+    try {
+      final val = await _storage.read(key: _customApiUrlKey);
+      if (val != null && val.trim().isNotEmpty) {
+        _inMemoryCustomApiUrl = val.trim();
+        return _inMemoryCustomApiUrl;
+      }
+    } catch (e) {
+      debugPrint('TokenStorage getCustomApiUrl error: $e');
+    }
+    return null;
+  }
+
   static Future<void> write(String key, String value) async {
     try {
       await _storage.write(key: key, value: value);
@@ -111,11 +167,14 @@ class TokenStorage {
   static Future<void> clearAll() async {
     _inMemoryToken = null;
     _inMemoryRefreshToken = null;
+    _inMemoryIsGuest = null;
     try {
-      await _storage.deleteAll();
+      // Clear auth tokens only, preserve custom API URL preference
+      await _storage.delete(key: _tokenKey);
+      await _storage.delete(key: _refreshTokenKey);
+      await _storage.delete(key: _isGuestKey);
     } catch (e) {
       debugPrint('TokenStorage clearAll error: $e');
     }
   }
 }
-

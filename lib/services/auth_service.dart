@@ -19,6 +19,7 @@ class AuthService {
       final token = response.data['access_token'];
       if (token != null) {
         await TokenStorage.saveToken(token.toString());
+        await TokenStorage.saveIsGuest(false);
         return true;
       }
       return false;

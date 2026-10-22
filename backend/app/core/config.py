@@ -39,6 +39,9 @@ class Settings(BaseSettings):
     # CORS Configuration
     CORS_ORIGINS: str = os.getenv("CORS_ORIGINS", "*")
     
+    # Google OAuth
+    GOOGLE_CLIENT_ID: str = os.getenv("GOOGLE_CLIENT_ID", "")
+    
     class Config:
         case_sensitive = True
 

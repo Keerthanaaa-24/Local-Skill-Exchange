@@ -4,8 +4,11 @@ import 'core/theme/app_theme.dart';
 import 'routes/app_routes.dart';
 import 'providers/settings_provider.dart';
 
-void main() {
+import 'core/config/env.dart';
+
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await Env.loadPersistedUrl();
 
   runApp(
     const ProviderScope(

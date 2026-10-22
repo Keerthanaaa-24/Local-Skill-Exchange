@@ -14,6 +14,8 @@ router = APIRouter()
 @router.post("", response_model=BookingResponse)
 def create_booking(booking_in: BookingCreate, db: SessionDep, current_user: CurrentUser):
     try:
+        if current_user.email == "guest_user@localskillexchange.internal":
+            raise HTTPException(status_code=403, detail="Guests cannot book sessions. Please register or log in.")
         # Check if mentor exists
         mentor = db.query(User).filter(User.id == booking_in.mentor_id).first()
         if not mentor:

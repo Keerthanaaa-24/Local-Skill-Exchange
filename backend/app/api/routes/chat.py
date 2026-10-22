@@ -251,6 +251,10 @@ async def websocket_endpoint(websocket: WebSocket, token: str, db: SessionDep):
                 continue
 
             if receiver_id and content:
+                if user.email == "guest_user@localskillexchange.internal":
+                    err_payload = {"type": "error", "message": "Guests cannot send messages. Please register or log in."}
+                    await manager.send_personal_message(json.dumps(err_payload), user.id)
+                    continue
                 receiver_user = db.query(User).filter(User.id == receiver_id).first()
                 if not getattr(user, "is_test_user", False) and receiver_user and getattr(receiver_user, "is_test_user", False):
                     err_payload = {"type": "error", "message": "User not available for messaging."}

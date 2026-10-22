@@ -7,6 +7,7 @@ import '../../providers/auth_provider.dart';
 import '../../providers/settings_provider.dart';
 import '../../routes/app_routes.dart';
 import '../features/edit_profile_screen.dart';
+import '../../core/config/env.dart';
 
 class SettingsScreen extends ConsumerWidget {
   const SettingsScreen({super.key});
@@ -343,7 +344,34 @@ class SettingsScreen extends ConsumerWidget {
               ),
               const SizedBox(height: AppConstants.paddingL),
 
-              // 7. ABOUT & CAPSTONE METADATA
+              // 7. SERVER & MOBILE CONNECTIVITY
+              _buildSectionHeader(context, 'Server & Mobile Connectivity', Icons.dns_rounded),
+              _buildCardContainer(
+                context,
+                children: [
+                  ListTile(
+                    leading: const Icon(Icons.wifi_tethering_rounded, color: AppColors.primary),
+                    title: const Text('Backend API URL'),
+                    subtitle: Text(Env.apiBaseUrl),
+                    trailing: const Icon(Icons.edit_rounded, size: 20),
+                    onTap: () => _showServerSettingsDialog(context),
+                  ),
+                  const Divider(height: 1),
+                  ListTile(
+                    leading: Icon(
+                      authUser?.isGuest == true ? Icons.visibility_rounded : Icons.verified_user_rounded,
+                      color: authUser?.isGuest == true ? Colors.amber.shade700 : AppColors.success,
+                    ),
+                    title: Text(authUser?.isGuest == true ? 'Session: Guest Mode' : 'Session: Verified Member'),
+                    subtitle: Text(authUser?.isGuest == true
+                        ? 'Browsing with restricted write access. Sign in for full access.'
+                        : 'Full access to bookings, messages, and skill exchange.'),
+                  ),
+                ],
+              ),
+              const SizedBox(height: AppConstants.paddingL),
+
+              // 8. ABOUT & CAPSTONE METADATA
               _buildSectionHeader(context, 'About Local Skill Exchange', Icons.info_outline_rounded),
               _buildCardContainer(
                 context,
@@ -506,6 +534,80 @@ class SettingsScreen extends ConsumerWidget {
               );
             },
             child: const Text('Update'),
+          ),
+        ],
+      ),
+    );
+  }
+
+  void _showServerSettingsDialog(BuildContext context) {
+    final urlController = TextEditingController(text: Env.apiBaseUrl);
+
+    showDialog(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: const Row(
+          children: [
+            Icon(Icons.dns_rounded, color: AppColors.primary),
+            SizedBox(width: 8),
+            Text('Server Backend Connection'),
+          ],
+        ),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Text(
+              'Enter the backend server URL reachable from this device. '
+              'On physical phones on the same Wi-Fi, use your PC\'s Wi-Fi IP address (never localhost/127.0.0.1).',
+              style: TextStyle(fontSize: 12),
+            ),
+            const SizedBox(height: 12),
+            TextField(
+              controller: urlController,
+              decoration: const InputDecoration(
+                labelText: 'API Base URL',
+                hintText: 'http://192.168.1.2:8000/api/v1',
+                prefixIcon: Icon(Icons.link_rounded),
+              ),
+            ),
+            const SizedBox(height: 8),
+            Row(
+              children: [
+                ActionChip(
+                  label: const Text('Port 8000'),
+                  onPressed: () {
+                    urlController.text = 'http://${Env.defaultLanHost}:${Env.defaultPort}/api/v1';
+                  },
+                ),
+                const SizedBox(width: 8),
+                ActionChip(
+                  label: const Text('Port 8001'),
+                  onPressed: () {
+                    urlController.text = 'http://${Env.defaultLanHost}:${Env.fallbackPort}/api/v1';
+                  },
+                ),
+              ],
+            ),
+          ],
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(ctx),
+            child: const Text('Cancel'),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              final newUrl = urlController.text.trim();
+              if (newUrl.isNotEmpty) {
+                Env.setCustomApiBaseUrl(newUrl);
+                Navigator.pop(ctx);
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(content: Text('Server URL set to: ${Env.apiBaseUrl}')),
+                );
+              }
+            },
+            child: const Text('Save & Apply'),
           ),
         ],
       ),
