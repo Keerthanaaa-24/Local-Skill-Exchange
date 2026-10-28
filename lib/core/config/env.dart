@@ -80,7 +80,7 @@ class Env {
     return base;
   }
 
-  // Timeout settings (in milliseconds)
-  static const int connectTimeout = 12000;
-  static const int receiveTimeout = 12000;
+  // Timeout settings (in milliseconds) - 45s accommodates Render free-tier cold-start spin-ups
+  static const int connectTimeout = 45000;
+  static const int receiveTimeout = 45000;
 }

@@ -9,7 +9,7 @@ import sys
 import argparse
 import subprocess
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import urlparse, parse_qs
 
 # Add backend directory to sys.path
 backend_dir = Path(__file__).resolve().parent.parent
@@ -42,6 +42,18 @@ def migrate_database(target_url: str):
     port = parsed.port or 3306
     database = parsed.path.lstrip("/").split("?")[0]
 
+    # Handle SSL/TLS for TiDB Cloud and cloud-hosted MySQL
+    query_params = parse_qs(parsed.query)
+    ssl_kwargs = {}
+    if "ssl_ca" in query_params:
+        ssl_kwargs["ssl_ca"] = query_params["ssl_ca"][0]
+    if "ssl_verify_cert" in query_params:
+        ssl_kwargs["ssl_verify_cert"] = query_params["ssl_verify_cert"][0].lower() in ("true", "1")
+    if "ssl_verify_identity" in query_params:
+        ssl_kwargs["ssl_verify_identity"] = query_params["ssl_verify_identity"][0].lower() in ("true", "1")
+    if not ssl_kwargs and ("ssl" in parsed.query.lower() or port == 4000 or "tidb" in host.lower()):
+        ssl_kwargs["ssl"] = {"check_hostname": False}
+
     backup_file = get_latest_backup()
     print("=" * 65)
     print(" Local Skill Exchange — Cloud Database Migration")
@@ -49,6 +61,7 @@ def migrate_database(target_url: str):
     print(f" Target Host:   {host}:{port}")
     print(f" Target DB:     {database}")
     print(f" Target User:   {user}")
+    print(f" Target SSL:    {'Enabled' if ssl_kwargs else 'Disabled/Default'}")
     print("=" * 65)
 
     # Step 1: Pre-flight connection check via pymysql
@@ -63,7 +76,8 @@ def migrate_database(target_url: str):
             database=database,
             charset="utf8mb4",
             connect_timeout=15,
-            autocommit=True
+            autocommit=True,
+            **ssl_kwargs
         )
         with conn.cursor() as cur:
             cur.execute("SELECT VERSION()")
@@ -119,7 +133,8 @@ def migrate_database(target_url: str):
             password=password,
             database=database,
             charset="utf8mb4",
-            autocommit=False
+            autocommit=False,
+            **ssl_kwargs
         )
         try:
             with open(backup_file, "r", encoding="utf-8", errors="replace") as f:
@@ -178,7 +193,8 @@ def migrate_database(target_url: str):
         user=user,
         password=password,
         database=database,
-        charset="utf8mb4"
+        charset="utf8mb4",
+        **ssl_kwargs
     )
     with conn.cursor() as cur:
         cur.execute("SHOW TABLES")
