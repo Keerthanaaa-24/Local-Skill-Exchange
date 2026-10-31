@@ -1,7 +1,10 @@
 # Environment & Secrets
 .env
+.env.*
 *.env
 !.env.example
+!.env*.example
+!*.env.example
 *.pem
 *.key
 *.cer
@@ -13,6 +16,9 @@
 key.properties
 android/key.properties
 backend/backups/
+backups/
+*.dump
+*.bak
 
 # Python
 __pycache__/
@@ -22,6 +28,7 @@ __pycache__/
 venv/
 ENV/
 env/
+backend/venv/
 *.sqlite
 *.sqlite3
 *.db
@@ -33,8 +40,10 @@ htmlcov/
 .coverage.*
 
 # Backend Uploads (track folder with .gitkeep only)
-backend/uploads/avatars/*
-!backend/uploads/avatars/.gitkeep
+backend/uploads/*
+!backend/uploads/**/.gitkeep
+uploads/*
+!uploads/**/.gitkeep
 
 # Flutter / Dart / Web
 **/doc/api/
@@ -45,6 +54,9 @@ backend/uploads/avatars/*
 .pub-cache/
 .pub/
 /build/
+build/
+*.apk
+*.aab
 /coverage/
 
 # Symbols & Obfuscation
