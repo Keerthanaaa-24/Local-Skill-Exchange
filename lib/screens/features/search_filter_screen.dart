@@ -2,7 +2,9 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:latlong2/latlong.dart' as osm;
+import '../../widgets/osm_map_view.dart';
+import '../../widgets/place_search_dialog.dart';
 
 import '../../core/constants/app_constants.dart';
 import '../../core/widgets/custom_button.dart';
@@ -40,8 +42,9 @@ class _SearchFilterScreenState extends ConsumerState<SearchFilterScreen> {
 
   final TextEditingController _searchController = TextEditingController();
   final ScrollController _scrollController = ScrollController();
-  GoogleMapController? _mapController;
   Timer? _debounce;
+  osm.LatLng? _customMapCenter;
+  String? _selectedAreaName;
 
   final List<String> _categories = [
     'All',
@@ -80,7 +83,6 @@ class _SearchFilterScreenState extends ConsumerState<SearchFilterScreen> {
   void dispose() {
     _searchController.dispose();
     _scrollController.dispose();
-    _mapController?.dispose();
     _debounce?.cancel();
     super.dispose();
   }
@@ -233,6 +235,8 @@ class _SearchFilterScreenState extends ConsumerState<SearchFilterScreen> {
       _selectedSort = 'Recommended';
       _searchController.clear();
       _searchQuery = '';
+      _customMapCenter = null;
+      _selectedAreaName = null;
     });
   }
 
@@ -241,7 +245,25 @@ class _SearchFilterScreenState extends ConsumerState<SearchFilterScreen> {
            _searchQuery.isNotEmpty ||
            _creditsValue < 100 ||
            _minRating > 0.0 ||
-           _selectedSort != 'Recommended';
+           _selectedSort != 'Recommended' ||
+           _selectedAreaName != null;
+  }
+
+  Future<void> _searchLocationArea() async {
+    final selected = await PlaceSearchDialog.show(context);
+    if (selected != null && mounted) {
+      setState(() {
+        _customMapCenter = selected.coordinates;
+        _selectedAreaName = selected.name;
+        _isMapView = true;
+      });
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Centered map on ${selected.displayName}'),
+          behavior: SnackBarBehavior.floating,
+        ),
+      );
+    }
   }
 
   void _showMentorModal(SkillModel skill) {
@@ -331,26 +353,24 @@ class _SearchFilterScreenState extends ConsumerState<SearchFilterScreen> {
     return 'Nearby mentor available for peer skill exchange session';
   }
 
-  Set<Marker> _buildMapMarkers(List<SkillModel> skills) {
-    final Set<Marker> markers = {};
+  List<OsmMapMarkerItem> _buildMapMarkers(List<SkillModel> skills) {
+    final List<OsmMapMarkerItem> markers = [];
     for (int i = 0; i < skills.length; i++) {
       final s = skills[i];
-      // Generate slight deterministic offset around Bangalore center if coordinates missing
-      final double lat = s.latitude ?? (12.9716 + (i * 0.008 * (i % 2 == 0 ? 1 : -1)));
-      final double lng = s.longitude ?? (77.5946 + (i * 0.007 * (i % 3 == 0 ? 1 : -1)));
+      // Generate slight deterministic offset around center if coordinates missing
+      final double baseLat = _customMapCenter?.latitude ?? 12.9716;
+      final double baseLng = _customMapCenter?.longitude ?? 77.5946;
+      final double lat = s.latitude ?? (baseLat + (i * 0.008 * (i % 2 == 0 ? 1 : -1)));
+      final double lng = s.longitude ?? (baseLng + (i * 0.007 * (i % 3 == 0 ? 1 : -1)));
 
       markers.add(
-        Marker(
-          markerId: MarkerId('mentor_${s.id}_$i'),
-          position: LatLng(lat, lng),
-          infoWindow: InfoWindow(
-            title: s.ownerName,
-            snippet: '${s.title} • ${s.rating}★ (${s.credits} cr)',
-            onTap: () => _showMentorModal(s),
-          ),
-          icon: BitmapDescriptor.defaultMarkerWithHue(
-            s.rating >= 4.8 ? BitmapDescriptor.hueAzure : BitmapDescriptor.hueRed,
-          ),
+        OsmMapMarkerItem(
+          id: 'mentor_${s.id}_$i',
+          position: osm.LatLng(lat, lng),
+          title: s.ownerName,
+          subtitle: '${s.title} • ${s.rating}★ (${s.credits} cr)',
+          rating: s.rating,
+          payload: s,
           onTap: () => _showMentorModal(s),
         ),
       );
@@ -483,19 +503,15 @@ class _SearchFilterScreenState extends ConsumerState<SearchFilterScreen> {
 
   Widget _buildMapView(List<SkillModel> filteredSkills) {
     final markers = _buildMapMarkers(filteredSkills);
-    const initialTarget = LatLng(12.9716, 77.5946);
+    final initialTarget = _customMapCenter ?? const osm.LatLng(12.9716, 77.5946);
 
-    return GoogleMap(
-      initialCameraPosition: const CameraPosition(
-        target: initialTarget,
-        zoom: 12.0,
-      ),
+    return OsmMapView(
+      initialCenter: initialTarget,
+      initialZoom: 12.0,
       markers: markers,
-      myLocationEnabled: true,
-      myLocationButtonEnabled: true,
-      onMapCreated: (controller) {
-        _mapController = controller;
-      },
+      showUserLocation: true,
+      showControls: true,
+      showRouteToSelected: true,
     );
   }
 
@@ -634,6 +650,11 @@ class _SearchFilterScreenState extends ConsumerState<SearchFilterScreen> {
                   },
                 ),
               IconButton(
+                icon: const Icon(Icons.travel_explore_rounded),
+                tooltip: 'Search Area/City with OSM',
+                onPressed: _searchLocationArea,
+              ),
+              IconButton(
                 icon: const Icon(Icons.tune_rounded),
                 tooltip: 'More Filters',
                 onPressed: _showFilterBottomSheet,
@@ -655,37 +676,55 @@ class _SearchFilterScreenState extends ConsumerState<SearchFilterScreen> {
   Widget _buildInlineFilters() {
     return SizedBox(
       height: 40,
-      child: ListView.builder(
+      child: ListView(
         scrollDirection: Axis.horizontal,
-        itemCount: _categories.length,
-        itemBuilder: (context, index) {
-          final cat = _categories[index];
-          final isSelected = _selectedCategories.contains(cat);
-          final primaryColor = Theme.of(context).primaryColor;
-
-          return Padding(
-            padding: const EdgeInsets.only(right: 8),
-            child: FilterChip(
-              label: Text(cat),
-              selected: isSelected,
-              onSelected: (_) => _onCategoryTapped(cat),
-              selectedColor: primaryColor,
-              checkmarkColor: Colors.white,
-              labelStyle: TextStyle(
-                color: isSelected ? Colors.white : Theme.of(context).textTheme.bodyLarge?.color,
-                fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
-                fontSize: 13,
+        children: [
+          if (_selectedAreaName != null)
+            Padding(
+              padding: const EdgeInsets.only(right: 8),
+              child: InputChip(
+                avatar: const Icon(Icons.location_on, size: 16, color: Colors.white),
+                label: Text('Area: $_selectedAreaName'),
+                selected: true,
+                selectedColor: Colors.deepPurple,
+                labelStyle: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 13),
+                deleteIconColor: Colors.white,
+                onDeleted: () {
+                  setState(() {
+                    _customMapCenter = null;
+                    _selectedAreaName = null;
+                  });
+                },
               ),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(20),
-                side: BorderSide(
-                  color: isSelected ? primaryColor : Colors.grey.withAlpha(50),
-                ),
-              ),
-              padding: const EdgeInsets.symmetric(horizontal: 4),
             ),
-          );
-        },
+          ..._categories.map((cat) {
+            final isSelected = _selectedCategories.contains(cat);
+            final primaryColor = Theme.of(context).primaryColor;
+
+            return Padding(
+              padding: const EdgeInsets.only(right: 8),
+              child: FilterChip(
+                label: Text(cat),
+                selected: isSelected,
+                onSelected: (_) => _onCategoryTapped(cat),
+                selectedColor: primaryColor,
+                checkmarkColor: Colors.white,
+                labelStyle: TextStyle(
+                  color: isSelected ? Colors.white : Theme.of(context).textTheme.bodyLarge?.color,
+                  fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
+                  fontSize: 13,
+                ),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20),
+                  side: BorderSide(
+                    color: isSelected ? primaryColor : Colors.grey.withAlpha(50),
+                  ),
+                ),
+                padding: const EdgeInsets.symmetric(horizontal: 4),
+              ),
+            );
+          }),
+        ],
       ),
     ).animate().fade(delay: 100.ms).slideY(begin: 0.1);
   }

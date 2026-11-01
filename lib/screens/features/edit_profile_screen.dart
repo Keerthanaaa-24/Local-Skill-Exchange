@@ -7,6 +7,8 @@ import '../../models/profile_models.dart';
 import '../../providers/profile_provider.dart';
 import '../../providers/user_provider.dart';
 import '../../widgets/skill_picker_modal.dart';
+import '../../widgets/place_search_dialog.dart';
+import '../../services/location_service.dart';
 
 class EditProfileScreen extends ConsumerStatefulWidget {
   const EditProfileScreen({super.key});
@@ -112,6 +114,45 @@ class _EditProfileScreenState extends ConsumerState<EditProfileScreen> {
           setState(() => _isLoading = false);
         }
       }
+    }
+  }
+
+  Future<void> _detectCurrentLocation() async {
+    final locState = await locationService.determinePosition();
+    if (locState.position != null && mounted) {
+      setState(() {
+        _latController.text = locState.position!.latitude.toStringAsFixed(4);
+        _lngController.text = locState.position!.longitude.toStringAsFixed(4);
+      });
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Coordinates updated from device GPS'),
+          behavior: SnackBarBehavior.floating,
+        ),
+      );
+    } else if (mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(locState.errorMessage ?? 'Unable to acquire GPS coordinates.'),
+          behavior: SnackBarBehavior.floating,
+        ),
+      );
+    }
+  }
+
+  Future<void> _searchPlaceLocation() async {
+    final place = await PlaceSearchDialog.show(context);
+    if (place != null && mounted) {
+      setState(() {
+        _latController.text = place.coordinates.latitude.toStringAsFixed(4);
+        _lngController.text = place.coordinates.longitude.toStringAsFixed(4);
+      });
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Coordinates set to ${place.name}'),
+          behavior: SnackBarBehavior.floating,
+        ),
+      );
     }
   }
 
@@ -244,6 +285,38 @@ class _EditProfileScreenState extends ConsumerState<EditProfileScreen> {
                 const SizedBox(height: AppConstants.paddingL),
 
                 // Location Coordinates
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      'Location Coordinates',
+                      style: theme.textTheme.titleSmall?.copyWith(fontWeight: FontWeight.bold),
+                    ),
+                    Row(
+                      children: [
+                        TextButton.icon(
+                          onPressed: _detectCurrentLocation,
+                          icon: const Icon(Icons.my_location, size: 14),
+                          label: const Text('GPS Detect', style: TextStyle(fontSize: 12)),
+                          style: TextButton.styleFrom(
+                            padding: const EdgeInsets.symmetric(horizontal: 6),
+                            minimumSize: const Size(50, 30),
+                          ),
+                        ),
+                        TextButton.icon(
+                          onPressed: _searchPlaceLocation,
+                          icon: const Icon(Icons.travel_explore_rounded, size: 14),
+                          label: const Text('Search Place', style: TextStyle(fontSize: 12)),
+                          style: TextButton.styleFrom(
+                            padding: const EdgeInsets.symmetric(horizontal: 6),
+                            minimumSize: const Size(50, 30),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 6),
                 Row(
                   children: [
                     Expanded(

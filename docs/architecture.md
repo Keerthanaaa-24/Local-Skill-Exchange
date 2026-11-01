@@ -35,7 +35,7 @@ The **Local Skill Exchange** platform is built on a modern, decoupled client-ser
 - **HTTP Client:** Dio (with `ApiClient` singleton, authorization header interceptor, error handling)
 - **Real-time Engine:** `WebSocketChannel` with automatic reconnect and ping/pong heartbeats
 - **Secure Storage:** `FlutterSecureStorage` (JWT access token persistence)
-- **Location Services:** `google_maps_flutter_web` & `geolocator`
+- **Location & Map Services:** `flutter_map` (OpenStreetMap standard tiles), `latlong2`, `geolocator`, free Photon/Nominatim geocoding, and OSRM routing
 
 ### 2.2 Backend (API Server)
 - **Framework:** FastAPI (Python 3.11+) running on Uvicorn ASGI server

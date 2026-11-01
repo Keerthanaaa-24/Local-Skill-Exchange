@@ -1,7 +1,8 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:latlong2/latlong.dart' as osm;
+import '../widgets/osm_map_view.dart';
 
 import '../core/constants.dart';
 import '../core/utils/responsive_utils.dart';
@@ -591,26 +592,27 @@ class _ExploreScreenState extends ConsumerState<ExploreScreen> with SingleTicker
             );
           }
 
-          final initialCenter = LatLng(validUsers.first.lat!, validUsers.first.lng!);
+          final initialCenter = osm.LatLng(validUsers.first.lat!, validUsers.first.lng!);
           final markers = validUsers.map((user) {
-            return Marker(
-              markerId: MarkerId(user.id),
-              position: LatLng(user.lat!, user.lng!),
-              infoWindow: InfoWindow(
-                title: user.name,
-                snippet: '${user.title} • ${user.rating}★ (${user.distanceKm}km)',
-                onTap: () => _navigateToMentorProfile(user),
-              ),
+            return OsmMapMarkerItem(
+              id: user.id,
+              position: osm.LatLng(user.lat!, user.lng!),
+              title: user.name,
+              subtitle: '${user.title} • ${user.rating}★ (${user.distanceKm}km)',
+              rating: user.rating,
+              onTap: () => _navigateToMentorProfile(user),
             );
-          }).toSet();
+          }).toList();
 
           return Stack(
             children: [
-              GoogleMap(
-                initialCameraPosition: CameraPosition(target: initialCenter, zoom: 12.0),
+              OsmMapView(
+                initialCenter: initialCenter,
+                initialZoom: 12.0,
                 markers: markers,
-                myLocationButtonEnabled: false,
-                zoomControlsEnabled: true,
+                showUserLocation: true,
+                showControls: true,
+                showRouteToSelected: true,
               ),
               Positioned(
                 top: 8,
@@ -618,7 +620,7 @@ class _ExploreScreenState extends ConsumerState<ExploreScreen> with SingleTicker
                 child: Container(
                   padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
                   decoration: BoxDecoration(
-                    color: Colors.black.withOpacity(0.7),
+                    color: Colors.black.withValues(alpha: 0.7),
                     borderRadius: BorderRadius.circular(12),
                   ),
                   child: Text(
